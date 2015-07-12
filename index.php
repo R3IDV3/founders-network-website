@@ -2,9 +2,7 @@
 	
 	include 'router.php';
 	
-	$router = new Router();
-	
-	$router->route(array(
+	new Router(array(
 		'/' => 'home.php',
 		'/about' => 'about.php'
 	));
