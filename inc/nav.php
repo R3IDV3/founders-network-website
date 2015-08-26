@@ -2,9 +2,8 @@
 	<div class="nav left">
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="about">About Us</a></li>
-			<li><a href="programs">Programs</a></li>
-			<li><a href="events.php">Events</a></li>
+			<li><a href="about.php">About Us</a></li>
+			<li><a href="team.php">Our Team</a></li>
 		</ul>
 	</div>
 	<div class="nav center">
@@ -12,9 +11,9 @@
 	</div>
 	<div class="nav right">
 		<ul>
-			<li><a href="faq">FAQ</a></li>
-			<li><a href="opportunities">Opportunities</a></li>
-			<li><a href="join">Join Now</a></li>
+			<li><a href="programs.php">Programs</a></li>
+			<li><a href="events.php">Events</a></li>
+			<li><a href="faq.php">FAQ</a></li>
 		</ul>
 <!--
 		<form method="post" action="results.php">
