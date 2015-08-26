@@ -4,5 +4,6 @@
 	
 	new Router(array(
 		'/' => 'home.php',
-		'/about' => 'about.php'
+		'/about' => 'about.php',
+		'/events' => 'events.php'
 	));
