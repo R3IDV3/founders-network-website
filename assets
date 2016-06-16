@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /Applications/MAMP/htdocs/founders-network-website/
+python assets.py inc/assets.php img png jpg
+osascript -e 'tell application "Terminal" to quit'

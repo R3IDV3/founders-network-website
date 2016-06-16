@@ -5,10 +5,12 @@ $(function(){
 		taglines = [
 			'Western\'s premier business entreneurship network',
 			'Establish and grow your unique startup venture',
+			'<a class="feature-link" href="/microsoft-case-competition">Join us on<br>March 19, 2016</a>'
 		],
 		images = [
 			'img/entrepeneurship.png',
 			'img/devices.png',
+			'img/mcc2016.png'
 		];
 	
 	for ( item = 0; item < taglines.length; item++ ) {
@@ -32,7 +34,7 @@ $(function(){
 	
 	T();
 	
-	$('header.home').on('click', '.t-trigger', function(){
+	$('.t-trigger').click(function(){
 		if ( i != parseInt($(this).attr('data-ticker-item')) ) {
 			clearInterval(t);
 			$('header.home')
@@ -46,7 +48,7 @@ $(function(){
 		}
 	});
 	
-	$('header.home').on('click', '.t-increment', function(){
+	$('.t-increment').click(function(){
 		clearInterval(t);
 		$('header.home')
 				.find('.t-trigger[data-ticker-item="' + i + '"]')
@@ -58,7 +60,7 @@ $(function(){
 		T();
 	});
 	
-	$('header.home').on('click', '.t-decrement', function(){
+	$('.t-decrement').click(function(){
 		clearInterval(t);
 		$('header.home')
 				.find('.t-trigger[data-ticker-item="' + i + '"]')
@@ -70,13 +72,15 @@ $(function(){
 		T();
 	});
 	
-	$('header.home').on('mouseenter', function(){
-		$('.t-increment, .t-decrement').fadeIn(500);
-	});
-	
-	$('header.home').on('mouseleave', function(){
-		$('.t-increment, .t-decrement').fadeOut(500);
-	});
+	if ( $('html').hasClass('no-touch') ) {
+		$('header.home').on('mouseenter', function(){
+			$('.t-increment, .t-decrement').fadeIn(500);
+		});
+		
+		$('header.home').on('mouseleave', function(){
+			$('.t-increment, .t-decrement').fadeOut(500);
+		});
+	}
 	
 	function TT() {
 		tt = setTimeout(function(){

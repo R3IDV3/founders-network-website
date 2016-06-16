@@ -50,6 +50,10 @@
 	@media screen and (max-width: $breakpoint) { @content; }
 }
 
+@mixin portrait() {
+	@media only screen and (orientation : portrait) { @content; }
+}
+
 @function sqrt($r) { 
 	$x0: 1;
 	$x1: $x0;

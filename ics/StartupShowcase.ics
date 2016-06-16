@@ -1,0 +1,51 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.1//EN
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+DTSTART:20070311T020000
+TZNAME:EDT
+TZOFFSETTO:-0400
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+DTSTART:20071104T020000
+TZNAME:EST
+TZOFFSETTO:-0500
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=America/Toronto:20151117T210000
+UID:9FA32397-6EC2-4004-95A6-3AEE4A02A7B2
+DTSTAMP:20151115T031050Z
+LOCATION:Ivey & The Wave
+DESCRIPTION:The Nspire Innovation Network and the Western Founders Netwo
+ rk invite you to the Second Annual Startup Showcase - in association wit
+ h Global Entrepreneurship Week 2015. This event will bring you an evenin
+ g of insightful conversations with entrepreneurs and industry experts. F
+ urthermore\, local startups will attend to share their trials and succes
+ ses while showcasing their products or initiatives.\n\nPre-event:\nBe su
+ re to check out the Ideas Exchange from 4:30-6 at the Ivey Business Scho
+ ol\, Room TBA\, an exclusive round table discussion where you can connec
+ t with industry experts and fellow innovators. This event's topic: the i
+ ntersection of food and technology. You'll participate in a thought prov
+ oking discussion with start-up organizations\, a London restauranteur\, 
+ and a professor of agriculture. Free food included!\n\nSome highlights o
+ f the event are:\n- Keynote Speaker: Larry Plummer\, Head of the Ivey Ne
+ w Venture Project\n- FREE food and refreshments\n- Panel discussions fro
+ m Entrepreneurship experts\n- Networking session (some of the startups a
+ re hiring!)\n- Showcase of Startup Products
+URL;VALUE=URI:https://www.facebook.com/events/1492988367663912/
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Startup Showcase
+DTSTART;TZID=America/Toronto:20151117T163000
+CREATED:20151115T030930Z
+END:VEVENT
+END:VCALENDAR

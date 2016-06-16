@@ -1,8 +1,6 @@
-# Fix Rewrite
-Options +FollowSymLinks -MultiViews
-
 # Mod Rewrite
 RewriteEngine On
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)$ index.php?uri=$1 [QSA,L]
+RewriteRule ^(.+)$ /index.php?uri=$1 [QSA,L]

@@ -1,12 +1,13 @@
-$(function(){
-	if ( $('.stats').length ) {
-		var counted = false;
+$(window).load(function(){
+	$('.stats').each(function(){
+		var $self = $(this),
+			counted = false;
 		$(window).scroll(function(){
-			if ( isInView($('.stats')[0]) && !(counted) ) {
+			if ( isInView($self[0]) && !(counted) ) {
 				counted = true;
 				$('.count').each(function(){			
 					var $self = $(this);
-					var to = parseInt($(this).attr('data-to'));
+					var to = parseInt($(this).children('.n').text());
 					$({ n: 0 }).animate({ n: to}, {
 						duration: 1000,
 						step: function(count) {
@@ -16,5 +17,5 @@ $(function(){
 				});
 			}
 		});
-	}
+	});
 });

@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.1//EN
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+DTSTART:20070311T020000
+TZNAME:EDT
+TZOFFSETTO:-0400
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+DTSTART:20071104T020000
+TZNAME:EST
+TZOFFSETTO:-0500
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=America/Toronto:20151123T210000
+UID:7397B0F8-BA08-4375-880E-29D7849EB69F
+DTSTAMP:20151115T032244Z
+LOCATION:Propel\, WSS 2310
+DESCRIPTION:"Unleash Your Inner Entrepreneur" at Enactus Western's first
+  annual Social Entrepreneurship Workshop! Explore the idea social enterp
+ rise\, collaborate with other passionate individuals\, and then develop 
+ your socially focused projects in teams.\n\nEnactus Western will help ki
+ ckstart the top three proposed projects with:\n- $500 in funding\n- Team
+  recruitment services\n- Entrepreneurial support\n\nEnactus Western will
+  be hosting our workshop as a part of Global Entrepreneurship Week (GEW)
+  to inspire innovation on Western's campus.\n\nLet's innovate and impact
+ \, Western.
+URL;VALUE=URI:https://www.facebook.com/events/448904211985889/
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:Enactus
+DTSTART;TZID=America/Toronto:20151123T190000
+CREATED:20151115T031737Z
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Apple Inc.//Mac OS X 10.11.1//EN
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+DTSTART:20070311T020000
+TZNAME:EDT
+TZOFFSETTO:-0400
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+DTSTART:20071104T020000
+TZNAME:EST
+TZOFFSETTO:-0500
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=America/Toronto:20151116T190000
+UID:2DD3DD91-D65A-4948-9040-A8E9773E440E
+DTSTAMP:20151115T043525Z
+LOCATION:UCC 56
+DESCRIPTION:PBSN is hosting an Entrepreneurship Panel for the first time
+  during Global Entrepreneur Week! We are working in association with Ive
+ y Entrepreneurship Club and Nspire Innovation Network to bring you a spe
+ aker panel of 4 entrepreneurs. They will be talking about why they chose
+  the industry\, what it's like to be an entrepreneur\, why people should
+  be interested\, and how you can get involved. We will also be inviting 
+ Ivey HBA 1 & 2 entrepreneurial students for networking afterwards!
+URL;VALUE=URI:https://www.facebook.com/events/889041074484926/
+SEQUENCE:0
+X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
+SUMMARY:PBSN Entrepreneurship Panel
+DTSTART;TZID=America/Toronto:20151116T173000
+CREATED:20151115T023835Z
+END:VEVENT
+END:VCALENDAR
