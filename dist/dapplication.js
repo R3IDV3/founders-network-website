@@ -9,8 +9,9 @@ $(function(){
 		validate(this);
 	});
 	
+/*
 	$('input[name=position]').on('change', function() {
-		var branch = $('input[name=position]:checked', '#application-form').parents('fieldset').find('legend').text();
+		var branch = $('input[name=position[]]:checked', '#application-form').parents('fieldset').find('legend').text();
 		$('#education-qs, #finance-qs, #marketing-qs, #operations-qs').css('display', 'none');
 		if (branch == "Education") {
 			$('#education-qs').css('display', 'block');
@@ -22,6 +23,24 @@ $(function(){
 			$('#operations-qs').css('display', 'block');
 		}
 		validate(this);
+	});
+*/
+	
+	$('input[name="position[]"]').on('change', function() {
+        $('#' + this.id + '-qs').slideToggle();
+        $numChecked = $(this).parents('fieldset').children(':checked').length;
+        
+        if ($numChecked == 1) {
+            $(this).siblings('.qs[data-level=portfolio]').slideDown();
+        } else if ($numChecked == 0) {
+            $(this).siblings('.qs[data-level=portfolio]').slideUp();
+        }
+    	validate(this);
+	});
+	
+	$('input[name="portfolios[]"]').on('change', function() {
+    	$('#' + this.value + '-disable-toggle').toggleClass('disabled');
+    	$('.' + this.value + '-qs').slideToggle();
 	});
 	
 	$('input[type=file]').on('change', function() {

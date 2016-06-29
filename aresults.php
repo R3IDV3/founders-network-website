@@ -15,42 +15,81 @@ function spamcheck($field) {
 
 if (isset($_POST["submit"])) {
 	$mailcheck = spamcheck($_POST["email"]);
+	
 	if ($mailcheck == FALSE) { //don't send email and display invalid email address page
-		include 'inc/mailcheck-fail.php';
+		include "inc/mailcheck-fail.php";
 	} else { //gather data and send email
-		//echo 'Passed spam test.<br>';
-		$subject = 'You\'ve received a Director Application';
-		//$recruiterEmail = 'zain.hemani@foundersnetwork.ca';
-		//$recruiterEmail = 'zain.hemani7@gmail.com';
-		$recruiterEmail = 'reid.vender@me.com';
 		
-		$first = $_POST['firstname'];
-		$last = $_POST['lastname'];
-		$email = $_POST['email'];
-		$yos = $_POST['year-of-study'];
-		$faculty = $_POST['faculty'];
-		$position = $_POST['position'];
-		$univQ = $_POST['universal-q'];
+		$subject = "You've received a Director Application";
+		$first = $_POST["firstname"];
+		$last = $_POST["lastname"];
+		$email = $_POST["email"];
+		$yos = $_POST["year-of-study"];
+		$faculty = $_POST["faculty"];
 		
-		//echo 'Assigned non-specific variables.<br>';
+		// Begin building the message
+		$msg = <<<MSG
+
+            <p><strong>Name:</strong> $first $last</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Year of Study:</strong> $yos</p>
+            <p><strong>Faculty:</strong> $faculty</p>
+
+MSG;
 		
-		// branch-specific questions
-		if ( $position === 'director-of-engagement' || $position === 'director-of-communication' ) {
-			$branch = 'education';
-		} elseif ( $position === 'director-of-fund-development' || $position === 'director-of-corporate-relations' ) {
-			$branch = 'finance';
-			$question2 = $_POST[$branch.'-q2'];
-		} elseif ( $position === 'creative-director' ) {
-			$branch = 'marketing';
-			$portfolioFile = $_FILES['marketing-portfolio'];
-			$uploadOkM = validateFile($portfolioFile);
-		} elseif ( $position === 'director-of-logistics' || $position === 'director-of-event-planning' ) {
-			$branch = 'operations';
+		$univQ = $_POST["universal-q"];
+		
+		/**********************************************************************
+         *
+         * UPLOAD THE RESUME WITH TIMESTAMP AND GET THE LINK AND ADD THE LINK TO THE MESSAGE
+         *
+         **********************************************************************/
+		
+		$portfolios = $_POST["portfolios"];
+		foreach ($portfolios as $portfolio) {
+    		// Get the recruiter's email
+    		$recruiterEmail = $_POST[$portfolio . "-email"];
+    		
+    		// Get the optional positions and add them to the message
+    		$positions = $_POST[$porfolio . "-positions"];
+    		
+    		if (count($positions) > 0) {
+        		
+        		$msg .= "<p><strong>Specific positions applicant is interested in:</strong><ul>";
+        		
+        		foreach ($positions as $position) {
+                    $msg .= <<<MSG
+
+                        <li>$position</li>
+
+MSG;
+        		}
+        		
+        		$msg .= "</ul></p>";
+    		}
+    		
+    		// Get answers to the questions and add them to the message
+    		$q1Question = $_POST[$portfolio . "-q1-q"];
+    		$q1Answer = $_POST[$portfolio . "-q1"];
+    		
+    		$q2Question = $_POST[$portfolio . "-q2-q"];
+    		$q2Answer = $_POST[$portfolio . "-q2"];
+    		
+    		$msg .= <<<MSG
+
+                <p><strong>$q1Question</strong><br>$q1Answer</p>
+                <p><strong>$q2Question</strong><br>$q2Answer</p>
+
+MSG;
+    		
+    		// Wordwrap final message
+    		$msg = wordwrap($msg, 70);
+    		
+    		// Send email with info and link to resume
+    		mail($recruiterEmail, $subject, $msg);
 		}
 		
-		//echo 'Assigned specific variables.<br>';
-		
-		$question1 = $_POST[$branch.'-q1'];
+		$recruiterEmail = 'reid.vender@me.com';
 		
 		$resume = $_FILES['resume'];
 		$uploadOk = validateFile($resume);

@@ -1851,8 +1851,9 @@ nav {
 		}
 	}
 	
-	#education-qs, #finance-qs, #marketing-qs, #operations-qs {
+	.qs {
 		display: none;
+		margin-top: 25px;
 	}
 	
 	fieldset {
@@ -1861,8 +1862,26 @@ nav {
 		padding: 1em;
 		margin-bottom: 25px;
 		
+		legend {
+    		font-size: 1.3em;
+    		font-weight: bold;
+    		
+    		input {
+        		margin-left: 0;
+    		}
+		}
+		
 		label {
 			font-size: 0.9em;
+		}
+		
+		input {
+    		margin-left: 2em;
+		}
+		
+		.disabled {
+    		pointer-events: none;
+            opacity: 0.4;
 		}
 	}
 	
@@ -1880,6 +1899,12 @@ nav {
 	.pos-desc-content {
 		font-size: 0.9em;
 		display: none;
+		margin-left: 2em;
+	}
+	
+	.portfolio-desc-content {
+    	font-size: 0.9em;
+    	margin-top: 0;
 	}
 	
 	button {

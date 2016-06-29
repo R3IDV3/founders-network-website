@@ -11,7 +11,9 @@
 		'/faq' => 'faq.php',
 		'/gew' => 'gew.php',
 		'/microsoft-case-competition' => 'mcc.php',
-		'/#!microsoft-case-competition/c10vj' => 'mcc.php'
+		'/#!microsoft-case-competition/c10vj' => 'mcc.php',
+		'/director-applications' => 'director-applications.php',
+		'/director-application-results' => 'aresults.php'
 	));
 	
 	// '/apply/education-executive' => 'education-executive-application.php',
