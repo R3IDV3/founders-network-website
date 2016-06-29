@@ -26,6 +26,7 @@ $(function(){
 	});
 */
 	
+/*
 	$('input[name="position[]"]').on('change', function() {
         $('#' + this.id + '-qs').slideToggle();
         $numChecked = $(this).parents('fieldset').children(':checked').length;
@@ -37,7 +38,25 @@ $(function(){
         }
     	validate(this);
 	});
-	
+*/
+    
+    $('button[type=reset]').on("click", function() {
+        // Hide questions and disable positions
+        $('input[name="portfolios[]"]').each(function() {
+        	$('#' + this.value + '-disable-toggle').addClass('disabled');
+        	$('.' + this.value + '-qs').slideUp();
+    	});
+    	// Remove errors
+    	$('.error').removeClass('error');
+    	// Disable submit button
+    	$('button[type=submit]').attr('disabled', 'disabled');
+    	// Hide position descriptions
+    	$('.pos-desc-toggle').each(function() {
+        	$(this).text("Learn More");
+        	$('.pos-desc-content[data-desc=' + $(this).attr('data-desc') + ']').slideUp();
+    	});
+    });
+    	
 	$('input[name="portfolios[]"]').on('change', function() {
     	$('#' + this.value + '-disable-toggle').toggleClass('disabled');
     	$('.' + this.value + '-qs').slideToggle();

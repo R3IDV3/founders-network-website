@@ -21,7 +21,7 @@
 		}
 		
 		private function titleToId($title) {
-			$id = str_replace(" ", "-", strtolower($title));
+			$id = str_replace("&", "and", str_replace(" ", "-", strtolower($title)));
 			return $id;
 		}
 		

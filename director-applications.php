@@ -86,28 +86,25 @@
     					
     					new Portfolio("Industry", "frank@foundersnetwork.ca", array(
         					"Co-Head of Industry"
-                                => array(""),
+                                => array("This position will work closely with the current head of industry to oversee and supervise the industry portfolio"),
         					
         					"Director of Case Competition"
-        					    => array(""),
+        					    => array("Responsible for the planning, implementation and operations of the annual Founders Network case competition"),
                                 
                             "Director of Careers"
-                                => array(""),
+                                => array("Responsible for organizing career panels, resume workshops and other career oriented initiatives"),
                                 
                             "Director of Special Events"
-                                => array(""),
+                                => array("Responsible for organizing special events for the industry portfolio including algorithms preparation workshops and various over events throughout the year"),
                                 
                             "Director of TechLink"
-                                => array(""),
+                                => array("Responsible for managing the Founders Network Techlink page which aims to connect entrepreneurs with those seeking talent and vice versa"),
                             
                             "Director of Corporate Relations"
-                                => array(""),
-                            
-                            "Director of Workshops (Algorithms Practice)"
-                                => array(""),
+                                => array("Responsible for the functions of the venture capital branch. This position will work closely with startups to connect them with the proper resources and sponsors"),
                                 
                             "Industry Executive"
-                                => array("", 2)
+                                => array("Will work closely with the entire industry portfolio to help in the planning and operations of various industry related events", 2)
                             ), 
                             
                             array(
@@ -181,7 +178,7 @@
 					<input type="file" name="resume" id="resume">
 					
 					<p class="application-process">Successful applicants will be invited for an interview.</p>
-					<button type="reset" onclick="$('.error').removeClass('error');$('#education-qs, #finance-qs, #marketing-qs, #operations-qs').css('display', 'none');$('button[type=submit]').attr('disabled', 'disabled');">Reset</button><button type="submit" name="submit" disabled>Submit</button><p class="error-message"><em>Ensure you have entered all fields accurately, selected a position and attached a resume.</em></p>
+					<button type="reset">Reset</button><button type="submit" name="submit" disabled>Submit</button><p class="error-message"><em>Ensure you have entered all fields accurately, selected a position and attached a resume.</em></p>
 					<br><p class="error-message" style="display: block;"><em>Note: It may take a few moments for your application to be processed before you are taken to the results page. Do not close or refresh the page.</em></p>
 				</form>
 			</article>
