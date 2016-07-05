@@ -1,7 +1,5 @@
 <?php
 
-//echo 'Beginning script.<br>';
-
 function spamcheck($field) {
 	// Sanitize e-mail address
 	$field = filter_var($field, FILTER_SANITIZE_EMAIL);
@@ -12,6 +10,39 @@ function spamcheck($field) {
     	return FALSE;
 	}
 }
+
+
+function validateFile($file) {
+	$fileName = basename($file["name"]);
+	$fileType = pathinfo($fileName,PATHINFO_EXTENSION);
+	$fileSize = $file["size"];
+	if ( $fileType != 'pdf' ) {
+		include 'inc/filetype-fail.php';
+		return false;
+	} elseif ( $fileSize > 20000000 ) { // 20MB
+		include 'inc/filesize-fail.php';
+		return false;
+	} else {
+		//echo 'Successfully validated '.$file["name"].'.<br>';
+		return true;
+	}
+}
+
+	
+function uploadFile($file, $email) {
+    // Extract student id from email
+    $studentId = explode("@", $email)[0];
+    
+	$target_dir = "temp/";
+	$target_file = $target_dir . $studentId . ".pdf";
+	if (move_uploaded_file($file["tmp_name"], "/var/www/html/" . $target_file)) { // successfully uploaded file
+		return $target_file;
+	} else {
+		include 'inc/upload-fail.php';
+		exit();
+	}
+}
+
 
 if (isset($_POST["submit"])) {
 	$mailcheck = spamcheck($_POST["email"]);
@@ -28,44 +59,45 @@ if (isset($_POST["submit"])) {
 		$faculty = $_POST["faculty"];
 		
 		// Begin building the message
-		$msg = <<<MSG
-
-            <p><strong>Name:</strong> $first $last</p>
-            <p><strong>Email:</strong> $email</p>
-            <p><strong>Year of Study:</strong> $yos</p>
-            <p><strong>Faculty:</strong> $faculty</p>
-
-MSG;
+		$msg_start = "<html><body>";
+		$msg_start .= "<p><strong>Name:</strong> $first $last</p>";
+        $msg_start .= "<p><strong>Email:</strong> $email</p>";
+        $msg_start .= "<p><strong>Year of Study:</strong> $yos</p>";
+        $msg_start .= "<p><strong>Faculty:</strong> $faculty</p>";
 		
 		$univQ = $_POST["universal-q"];
 		
-		/**********************************************************************
-         *
-         * UPLOAD THE RESUME WITH TIMESTAMP AND GET THE LINK AND ADD THE LINK TO THE MESSAGE
-         *
-         **********************************************************************/
+		$msg_start .= "<p><strong>Tell us why you want to be a part of Western Founder Network. Remember your response, we would love for you to share with us why you connect with FN during the interview stage.</strong><br>$univQ</p>";
+         
+        $resume = $_FILES['resume'];
+		$uploadOk = validateFile($resume);
+		
+		if ( $uploadOk ) {
+			$resumeLink = "http://www.foundersnetwork.ca/" . uploadFile($resume, $email);
+			$msg_start .= "<a href='$resumeLink'>Click Here to View Resume</a>";
+        }
 		
 		$portfolios = $_POST["portfolios"];
 		foreach ($portfolios as $portfolio) {
     		// Get the recruiter's email
     		$recruiterEmail = $_POST[$portfolio . "-email"];
+    		$msg_middle = "";
     		
     		// Get the optional positions and add them to the message
-    		$positions = $_POST[$porfolio . "-positions"];
-    		
-    		if (count($positions) > 0) {
+    		if (array_key_exists($portfolio . "-positions", $_POST)) {
         		
-        		$msg .= "<p><strong>Specific positions applicant is interested in:</strong><ul>";
+        		$positions = $_POST[$portfolio . "-positions"];
         		
-        		foreach ($positions as $position) {
-                    $msg .= <<<MSG
-
-                        <li>$position</li>
-
-MSG;
+        		if (count($positions) > 0) {
+            		
+            		$msg_middle .= "<p><strong>Specific positions applicant is interested in:</strong><ul>";
+            		
+            		foreach ($positions as $position) {
+                        $msg_middle .= "<li>$position</li>";
+            		}
+            		
+            		$msg_middle .= "</ul></p>";
         		}
-        		
-        		$msg .= "</ul></p>";
     		}
     		
     		// Get answers to the questions and add them to the message
@@ -75,147 +107,31 @@ MSG;
     		$q2Question = $_POST[$portfolio . "-q2-q"];
     		$q2Answer = $_POST[$portfolio . "-q2"];
     		
-    		$msg .= <<<MSG
-
-                <p><strong>$q1Question</strong><br>$q1Answer</p>
-                <p><strong>$q2Question</strong><br>$q2Answer</p>
-
-MSG;
+    		$msg_middle .= "<p><strong>$q1Question</strong><br>$q1Answer</p>";
+            $msg_middle .= "<p><strong>$q2Question</strong><br>$q2Answer</p>";
+            
+            $msg_end = "</body></html>";
+		
+    		$msg = $msg_start . $msg_middle . $msg_end;
     		
-    		// Wordwrap final message
-    		$msg = wordwrap($msg, 70);
+    		$headers = "From: noreply@foundersnetwork.ca\r\n";
+    		$headers .= "CC: communications@foundersnetwork.ca\r\n";
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+            
+            // Send email
+    		//$recruiterEmail = 'reid.vender@me.com';
+    		$mail_sent = mail($recruiterEmail, $subject, $msg, $headers);
     		
-    		// Send email with info and link to resume
-    		mail($recruiterEmail, $subject, $msg);
+    		if (!$mail_sent) {
+        		include 'inc/mail-fail.php';
+        		exit();
+    		}
 		}
-		
-		$recruiterEmail = 'reid.vender@me.com';
-		
-		$resume = $_FILES['resume'];
-		$uploadOk = validateFile($resume);
-		
-		if ( $uploadOk ) {
-			//echo 'Preparing to upload.<br>';
-			uploadFile($resume);
-			if ( $branch == 'marketing' && $uploadOkM ) {
-				uploadFile($portfolioFile);
-				$attachmentM = 'temp/' . basename($portfolioFile["name"]);
-			}
-			//echo 'Files uploaded.<br>';
-			
-			//create a boundary string. It must be unique 
-			//so we use the MD5 algorithm to generate a random hash 
-			$random_hash = md5(date('r', time()));
-			//define the headers we want passed. Note that they are separated with \r\n 
-			$headers = "From: noreply@foundersnetwork.ca";
-			//add boundary string and mime type specification 
-			$headers .= "\r\nContent-Type: multipart/mixed; boundary=\"PHP-mixed-".$random_hash."\"";
-			//read the atachment file contents into a string,
-			//encode it with MIME base64,
-			//and split it into smaller chunks
-			$attachment = 'temp/' . basename($resume["name"]);
-			//define the body of the message. 
-			ob_start(); //Turn on output buffering 
-?>
-
-
---PHP-mixed-<?php echo $random_hash; ?>  
-Content-Type: multipart/alternative; boundary="PHP-alt-<?php echo $random_hash; ?>"
-
---PHP-alt-<?php echo $random_hash; ?>  
-Content-Type: text/html; charset="iso-8859-1" 
-Content-Transfer-Encoding: 7bit
-
-<h2>You've received a Director Application!</h2> 
-<p><strong>First Name:</strong> <?php echo $first; ?></p> 
-<p><strong>Last Name:</strong> <?php echo $last; ?></p> 
-<p><strong>Email:</strong> <?php echo $email; ?></p> 
-<p><strong>Year of Study:</strong> <?php echo $yos; ?></p> 
-<p><strong>Faculty:</strong> <?php echo $faculty; ?></p> 
-<p><strong>Position:</strong> <?php 
-	if ( $position === 'director-of-engagement' ) {
-		echo 'Education, Director of Engagement';
-	} elseif ( $position === 'director-of-communication' ) {
-		echo 'Education, Director of Communication';
-	} elseif ( $position === 'director-of-fund-development' ) {
-		echo 'Finance, Director of Fund Development';
-	} elseif ( $position === 'director-of-corporate-relations' ) {
-		echo 'Finance, Director of Corporate Relations';
-	} elseif ( $position === 'creative-director' ) {
-		echo 'Marketing, Creative Director';
-	} elseif ( $position === 'director-of-logistics' ) {
-		echo 'Operations, Director of Logistics';
-	} elseif ( $position === 'director-of-event-planning' ) {
-		echo 'Operations, Director of Event Planning';
-	}  
-?></p> 
-<p>
-	<strong>Tell us about something cool you've done in the past 12 months.</strong><br>
-	<?php echo $univQ; ?>
-</p>
-<p><?php 
-	if ( $position === 'director-of-engagement' || $position === 'director-of-communication' ) {
-		echo '<strong>What do you think your daily activities and challenges will be in this position?</strong><br>';
-		echo $question1;
-	} elseif ( $position === 'director-of-fund-development' || $position === 'director-of-corporate-relations' ) {
-		echo '<strong>In your opinion, what are 2 characteristics of a fitting sponsor for Founders Network and why?</strong><br>';
-		echo $question1 . '<br>';
-		echo '<strong>Imagine you are the CEO of any existing tech start-up of your choice (some examples include: Shopify, Tilt, Oculus, Better Place, Etsy). If you had the opportunity to persuade an angel-investor to fund your company, how would you entice them to invest?</strong><br>';
-		echo $question2;
-	} elseif ( $position === 'creative-director' ) {
-		echo '<strong>If you were asked to \'sell\' Founders Network, what would you say?</strong><br>';
-		echo $question1;
-	} elseif ( $position === 'director-of-logistics' || $position === 'director-of-event-planning' ) {
-		echo '<strong>What kind of event do you see Founders Network hosting in the coming year? Explain how you would plan this event in  exactly 10 steps.</strong><br>';
-		echo $question1;
-	} 
-?></p> 
-<?php if ( $branch == 'marketing' ): ?>
-<p><strong>Marketing Portfolio: </strong><a href="http://45.55.62.203/<?php echo $attachmentM; ?>">Click Here</a></p>
-<?php endif; ?>
-<p><strong>Resume: </strong><a href="http://45.55.62.203/<?php echo $attachment; ?>">Click Here</a></p>
-
---PHP-alt-<?php echo $random_hash; ?>-- 
-
---PHP-mixed-<?php echo $random_hash; ?>-- 
-
-<?php
-			//copy current buffer contents into $message variable and delete current output buffer 
-			$message = ob_get_clean();
-			//send the email 
-			$mail_sent = @mail( $recruiterEmail, $subject, $message, $headers ); 
-			//if the message is sent successfully print "Mail sent". Otherwise print "Mail failed" 
-			$mail_sent ? include 'inc/success.php' : include 'inc/mail-fail.php';
-		}
+		if ($mail_sent) {
+    		include 'inc/success.php';
+        }
 	}	
-}
-
-
-function validateFile($file) {
-	$fileName = basename($file["name"]);
-	$fileType = pathinfo($fileName,PATHINFO_EXTENSION);
-	$fileSize = $file["size"];
-	if ( $fileType != 'pdf' ) {
-		include 'inc/filetype-fail.php';
-		return false;
-	} elseif ( $fileSize > 5000000 ) { // 20MB
-		include 'inc/filesize-fail.php';
-		return false;
-	} else {
-		//echo 'Successfully validated '.$file["name"].'.<br>';
-		return true;
-	}
-}
-
-	
-function uploadFile($file) {
-	$target_dir = "temp/";
-	$target_file = $target_dir . basename($file["name"]);
-	if (move_uploaded_file($file["tmp_name"], $target_file)) { // successfully uploaded file
-		return true;
-	} else {
-		include 'inc/upload-fail.php';
-	}
 }
 	
 ?>

@@ -5,12 +5,12 @@ $(function(){
 		taglines = [
 			'Western\'s premier business entreneurship network',
 			'Establish and grow your unique startup venture',
-			'<a class="feature-link" href="/microsoft-case-competition">Join us on<br>March 19, 2016</a>'
+			'<a class="feature-link" href="/director-applications">Get Involved<br>Become a Director</a>'
 		],
 		images = [
 			'img/entrepeneurship.png',
 			'img/devices.png',
-			'img/mcc2016.png'
+			'img/entrepeneurship.png'
 		];
 	
 	for ( item = 0; item < taglines.length; item++ ) {

@@ -27,8 +27,8 @@ $(function(){
 				$(el).parents('.input-group, .question').addClass('error').find('.error-message em').text('Field cannot contain numbers.');
 			}
 		} else if ( $(el).attr('name') == 'email' ) {
-			if ( !val.match(/^\w+@uwo\.ca$/) && !(val === null || val === "") ) { // if value does not begin with a string of alpha-numeric characters and end in '@uwo.ca'
-				$(el).parents('.input-group, .question').addClass('error').find('.error-message em').text('Email must be a valid UWO email.');
+			if ( !val.match(/.+@\w+\.\w+/) && !(val === null || val === "") ) { // if value does not begin with a string of alpha-numeric characters and end in '@uwo.ca' //!val.match(/^\w+@uwo\.ca$/) && 
+				$(el).parents('.input-group, .question').addClass('error').find('.error-message em').text('Email must be valid.');
 			}
 		} else if ( $(el).attr('name') == 'year-of-study' ) {
 			if ( !val.match(/^[1-4]$/) && !(val === null || val === "") ) { // if value is not a single number between 1 and 4
@@ -39,9 +39,7 @@ $(function(){
 		var noBlankFields = true,
 			af = document.forms["application-form"],
 			afdot = document.applicationForm;
-		if ( afdot.resume.value === null || afdot.resume.value === "" ) {
-			noBlankFields = false;
-		} else if ( afdot.firstname.value === null || afdot.firstname.value === "" ) {
+		if ( afdot.firstname.value === null || afdot.firstname.value === "" ) {
 			noBlankFields = false;
 		} else if ( afdot.lastname.value === null || afdot.lastname.value === "" ) {
 			noBlankFields = false;

@@ -47,11 +47,30 @@
 					</div>
 					<header class="blurb">
 					<h1 class="small-caps">Select Portfolios Below</h1>
-					<p>Please select at least one portfolio and answer the questions associated with them. You are not required to select specific positions within each portfolio, but you may if you like. If you are invited for an interview, you may be assigned a position based on your qualifications which you had not originally chosen in this application.</p>
+					<p>Please select at least one portfolio and answer the questions associated with them. You are not required to select specific positions within each portfolio, but you may if you like. If you are invited for an interview, you may be assigned a position which you had not originally chosen in this application based on your qualifications.</p>
 				</header>
 					
 					<?php
     					include "inc/Portfolio.class.php";
+    					
+    					new Portfolio("Education & Projects", "education@foundersnetwork.ca", array(
+    					    "Project Leaders" 
+    					        => array("(Senior Role, 1 to 2 per project)<br>The best way to learn how to code is, well, to write code. As a project leader, you will be responsible for leading a team of developers to work on a project. Project Leaders are experienced developers who would like to further build up their portfolio through managing a complete software development project. The main focus of these projects is educational, and the goal of each project would be to develop technical skills, with something to show for it at the end. A great way to gain some leadership, project management, and technical skills, and expand your github portfolio. For anyone looking to pursue a career in tech or become a product manager in the future, becoming a Project Leader at Western Founders Network is your ticket to the dance. Past executives at Western Founders Network have landed positions at IBM, Facebook, Google, and Yelp.", 6),
+    					    
+    					    "Education Executives" 
+    					        => array("Have you recently been working with the latest open-source software? Did you recently learn one of the thousands of new javascript frameworks? Would you like to help lead seminars and programming workshops at Western? Education executives will focus on running educationals to members on relevant topics. Topics will range from beginner programming tutorials to the newest cloud-based microservices technologies. A great way to build on your presentation and leadership skills, as well as an excuse to talk about what excites you.", 4),
+                            
+                            "Developers"
+                                => array("Participate in developing a project! Founders Network developers work under a project leader and attend weekly sessions to work on software projects. You will be working with experienced developers to come with a cool product. A great way to build on technical programming skills, work in development team, and have some to show friends, family, recruiters, and employers."),
+                            ), 
+                            
+                            array(
+                                "Describe a project (a link would be great) you have recently been involved in (can be in-school, at-work, or on your own time) with multiple team members, and the some leadership initiative you’ve taken during the project.",
+                                "Give us a brief description of a cool new technology you’ve played around with recently (could be the MEAN stack, Docker containers, AWS, etc..) and what you liked and disliked about it."
+                            ), 
+                            
+                            "The Education & Projects portfolio is responsible for developing a strong programming community around the club. Club members will have the opportunity to learn about new technologies and how to use them, with the ultimate goal of developing projects throughout the year to enhance their technical skills. We are looking for experienced developers to act as Project Leads and Education Executives. As a Project Lead you will be responsible in leading a team of students to develop a successful app. This is a great opportunity to develop dev leadership skills, along with technical skills, and a project to show-off at the end of the term. As an Education Executive you will be responsible for holding 1 or more education/tutorial sessions on a certain tech stack, or a certain topic in the industry. This is ideal for developers wanting to expand their presentation skills and talking about cool innovations or technologies you have been playing around with."
+    					);
     					
     					new Portfolio("Operations & Entrepreneurship", "nick@foundersnetwork.ca", array(
     					    "Director of Events" 
@@ -116,29 +135,14 @@
     					);
     					
     					new Portfolio("Marketing & Community Engagement", "niko.virvilis@foundersnetwork.ca", array(
-        					"Director of Engagement"
-        					    => array(""),
+        					"Director of Media and Technology"
+        					    => array("Must be well versed in photo and video editing software<br>Experience in film and photography<br>Familiar with Adobe Creative Suite programs (particularly Photoshop & Illustrator)"),
         					    
-                            "Director of Communications"
-                                => array(""),
+                            "Director of Communications & Relationship Manager"
+                                => array("Must have experience in events and promotions (potentially in promotion company)<br>Take value in social media analytics (Instagram, Facebook)<br>Previous involvement in Western University community (social councils, events teams, university government, etc…)"),
                                 
-                            "Director of Digital Media & Social Networking"
-                                => array(""),
-                                
-                            "Director of Graphic Design"
-                                => array(""),
-                                
-                            "Director of Photography"
-                                => array(""),
-                                
-                            "Director of Web Development & Design"
-                                => array(""),
-                            
-                            "Director of Founders Publications & Blogs"
-                                => array(""),
-                            
-                            "Director of Affiliates Network"
-                                => array("")
+                            "Creative Director & Assistant Educator of Graphic Design"
+                                => array("Fluency in Adobe Creative Suite (particularly Photoshop & Illustrator)<br>Must be a confident public speaker with great presentation skills<br>Previous involvement as a creative designer<br>Photography and Filming background"),
                             ), 
                             
                             array(
@@ -147,10 +151,10 @@
                             )
                         );
     					
-    					new Portfolio("Finance & Business Development Portfolio", "finance@foundersnetwork.ca", array(
+    					new Portfolio("Finance & Business Development", "finance@foundersnetwork.ca", array(
         					"Director of Finance"
         					    => array(
-        					        "In this position you will have a critical role as a liaison between our fund management and the ambitious event planning committees. You should be confident generating financial plans, overcoming logistical barriers, and taking the initiative. Basic Excel proficiency will be an asset.", 3),
+        					        "In this position you will have a critical role as a liaison between our fund management and the ambitious event planning committees. You should be confident generating financial budgets and taking the initiative. Basic Excel proficiency will be an asset.", 3),
         					    
                             "Director of Business Development"
                                 => array(
@@ -159,27 +163,27 @@
                             
                             array(
                                 "What about the finance and business development portfolio interests you?",
-                                "Tell us about any experiences you've had related to [or the reasons you are confident with] corporate relations/sponsorship proposals and/or budgetting/accounting? Additionally, please include 2~3 potential FN sponsors that you would like to reach out to and one sentence about why you chose them."
+                                "Tell us about any experiences you've had related to [or the reasons you are confident with] corporate relations/sponsorship proposals and/or budgeting/accounting? Additionally, please include 2~3 potential FN sponsors that you would like to reach out to and one sentence about why you chose them."
                             ), 
                             
-                            "Going into one of our most ambitious years since the start of Founders Network, in this portfolio you will play a pivotal role in ensuring the success of our new initiatives. Ensuring that our organization is able to acquire the funding it needs and that we are allocating it responsibly, is the core of the finance and business development portfolio. This role will be what you make it – and what you make it, can be an unforgettable learning experience that will speak volumes about you."
+                            "Going into one of our most ambitious years since the start of Founders Network, you will play a pivotal role in the success of our new initiatives.  Ensuring that our organization is able to acquire the funding it needs and that we are allocating it responsibly, is the core of the finance and business development portfolio. This role will be what you make it – and what you make it, can be an unforgettable learning experience that will speak volumes about you."
     					);
 					?>
 					
 					<div class="question">
-						<label for="universal-q-textarea">Tell us why you want to be a part of Western Founder Network. And remember your response, we would love for you to share with us why you connect with FN during the interview stage.</label><br>
+						<label for="universal-q-textarea">Tell us why you want to be a part of Western Founder Network. Remember your response, we would love for you to share with us why you connect with FN during the interview stage.</label><br>
 						<textarea name="universal-q" id="universal-q-textarea" placeholder="Explain your answer here..."></textarea>
 						<span class="error-message"><em></em></span>
 					</div>
 					
 					<br>
 					
-					Please attach your PDF resume (maximum size 5MB)<br>
+					Please attach your PDF resume (maximum size 20MB)<br>
 					<input type="file" name="resume" id="resume">
 					
-					<p class="application-process">Successful applicants will be invited for an interview.</p>
+					<p class="application-process">Successful applicants will be invited for an interview.<br><br><strong>Please save your responses elsewhere before submitting your application!<br><br>It may take a few moments for your application to be processed before you are taken to the results page. Do not close or refresh the page.</strong></p>
 					<button type="reset">Reset</button><button type="submit" name="submit" disabled>Submit</button><p class="error-message"><em>Ensure you have entered all fields accurately, selected a position and attached a resume.</em></p>
-					<br><p class="error-message" style="display: block;"><em>Note: It may take a few moments for your application to be processed before you are taken to the results page. Do not close or refresh the page.</em></p>
+<!-- 					<br><p class="application-process" style="display: block;"><em>Note: It may take a few moments for your application to be processed before you are taken to the results page. Do not close or refresh the page.</em></p> -->
 				</form>
 			</article>
 			<?php include 'inc/footer.php' ?>

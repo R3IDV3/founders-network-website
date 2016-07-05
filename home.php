@@ -15,7 +15,7 @@
 					<tr>
 						<td>
 							<h1></h1>
-							<a href="https://www.usc-online.ca/clubs_registration.asp?cid=8&scid=11&pid=7296" target="_blank" class="btn small-caps">Join Now</a> &nbsp;&nbsp;<a href="/microsoft-case-competition" class="btn small-caps">Microsoft Case Competition</a>
+<!-- 							<a href="https://www.usc-online.ca/clubs_registration.asp?cid=8&scid=11&pid=7296" target="_blank" class="btn small-caps">Join Now</a> &nbsp;&nbsp; --><a href="/director-applications" class="btn small-caps">Director Applications</a>
 						</td>
 						<td>
 							<img src="" >

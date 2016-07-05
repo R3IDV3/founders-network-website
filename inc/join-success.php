@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Western Founders Network - Error</title>
+		<title>Western Founders Network - Thanks</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -12,15 +12,15 @@
 			<header>
 				<section class="site-section-heading -applications">
 					<div class="ac" style="width: 80vw;">
-						<h1 class="small-caps site-section-title">Oops, something went wrong</h1>
+						<h1 class="small-caps site-section-title">Thank you for Signing Up</h1>
 					</div>
 				</section>
 				<?php include 'inc/nav.php' ?>
 			</header>
 			<article>
 				<header class="blurb">
-					<h1 class="small-caps">Unsuccessful</h1>
-					<p>The file(s) you uploaded were greater than 20MB. <a href="javascript:window.history.back();">Try again &rarr;</a></p>
+					<h1 class="small-caps">Success</h1>
+					<p>Your form has been submitted and is currently being processed. Thank you for applying for early bird registration with Western Founders Network.</p>
 				</header>
 			</article>
 			<?php include 'inc/footer.php' ?>

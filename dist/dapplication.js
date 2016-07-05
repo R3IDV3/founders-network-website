@@ -62,6 +62,19 @@ $(function(){
     	$('.' + this.value + '-qs').slideToggle();
 	});
 	
+	// Open stuff on page load
+	$('input[name="portfolios[]"]:checked').each(function() {
+    	$('#' + this.value + '-disable-toggle').removeClass('disabled');
+    	$('.' + this.value + '-qs').slideDown();
+    	
+    	if ( $('.error').length === 0) {
+			$('button[type=submit]').removeAttr('disabled');
+		} else {
+			$('button[type=submit]').attr('disabled', 'disabled');
+		}
+	});
+	
+	
 	$('input[type=file]').on('change', function() {
 		validate(this);
 	});
@@ -98,6 +111,7 @@ $(function(){
 			}
 		}
 		
+/*
 		var noBlankFields = true;
 		if ( !$('input[name=position]:checked', '#application-form').length ) {
 			noBlankFields = false;
@@ -141,8 +155,9 @@ $(function(){
 				}
 			}
 		}
+*/
 		
-		if ( $('.error').length === 0 && noBlankFields) {
+		if ( $('.error').length === 0) {
 			$('button[type=submit]').removeAttr('disabled');
 		} else {
 			$('button[type=submit]').attr('disabled', 'disabled');

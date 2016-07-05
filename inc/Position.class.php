@@ -27,8 +27,8 @@
 		
 		private function echoPosition() {
 			$id = $this->titleToId($this->title);
-			$numPosHTML = ($this->numPos > 1 ? '<span class="small-caps"><span class="char">(' . strval($this->numPos) . '</span> positions<span class="char">)</span></span>' : '<span class="small-caps"><span class="char">(1</span> position<span class="char">)</span></span>');
-			echo '<input type="checkbox" name="' . $this->portfolio . '-positions[]" id="' . $id . '" value="' . $id . '"><label for="' . $id . '"> ' . $this->title . ' ' . $numPosHTML . '</label><span class="small-caps pos-desc-toggle" data-desc="' . $id . '">Learn More</span><br><p class="pos-desc-content" data-desc="' . $id . '">' . $this->description . '</p>';
+			$numPosHTML = ($this->numPos > 1 ? '<span class="small-caps"><span class="char">(' . strval($this->numPos) . '</span> positions<span class="char">)</span></span>' : '');
+			echo '<input type="checkbox" name="' . $this->portfolio . '-positions[]" id="' . $id . '" value="' . $this->title . '"><label for="' . $id . '"> ' . $this->title . ' ' . $numPosHTML . '</label><span class="small-caps pos-desc-toggle" data-desc="' . $id . '">Learn More</span><br><p class="pos-desc-content" data-desc="' . $id . '">' . $this->description . '</p>';
 			
             /* 
              * Disabled the ability to add questions for each position
