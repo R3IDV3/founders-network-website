@@ -13,20 +13,17 @@
 				<section class="site-section-heading -applications">
 					<div class="ac" style="width: 80vw;">
 						<h1 class="small-caps site-section-title">Early Bird Registration</h1>
-						<p class="serif"><em>Sign up for early access to news and updates for the 2016-2017 year and take advantage of all that Founders Network has to offer.</em></p>
+						<p class="serif"><em>Sign up for early access to news and updates for the 2016-2017 year. Take advantage of all that Founders Network has to offer!</em></p>
 					</div>
 				</section>
 				<?php include 'inc/nav.php' ?>
 			</header>
-<!--
 			<article>
 				<header class="blurb">
-					<h1 class="small-caps">Role <span class="char">&</span> Responsibilities</h1>
-					<p>Help Founders Network plan and execute Educationals alongside Education Directors and the Vice President, Education. Education Executives will help design curricula and teach at Educationals. Organization, dedication, proactivity and creativity are key skills required for success in this position. Reasonable practical knowledge and experience in any programming language, including Web, is appropriate.</p>
+					<h1 class="small-caps">Founders AEO Summer Dinner</h1>
+					<p>Congratulations to everyone who’ve received their AEO offer from the Ivey HBA program. If you want to get a head start and meet your future colleagues as well as network with the executive team before the fall term begins, join us for our Western Founders Network Summer Dinner taking place in Toronto, late August. Subscribe to our emailing list to receive updates on the finalized details of this summer soirée, we hope to see you all there!</p>
 				</header>
 			</article>
--->
-            <div style="margin-top: 50px"></div>
 			<article class="form" style="margin-top: 0;">
 				<form action="/join-results" enctype="multipart/form-data" method="post" id="application-form" name="applicationForm">
 					<div class="input-group">
