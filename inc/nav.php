@@ -2,7 +2,13 @@
 	<div class="nav left">
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="/about">About Us</a></li>
+			<li>
+			    <a class="with-submenu" href="/about">About Us</a>
+			    <ul>
+    			    <li><a href="/about/group-strategy">Group Strategy</a></li>
+    			    <li><a href="/about/team">Executive Team</a></li>
+			    </ul>
+            </li>
 			<li><a href="/team">Our Team</a></li>
 		</ul>
 	</div>
