@@ -5,7 +5,6 @@ $(function() {
 	$('#programs').find('nav').find('a:contains("Programs")').parent().addClass("active");
 	$('#events').find('nav').find('a:contains("Events")').parent().addClass("active");
 	$('#faq').find('nav').find('a:contains("FAQ")').parent().addClass("active");
-	$('#education').find('nav').find('a:contains("Education")').parent().addClass("active");
 });
 $(window).load(function(){
 	$('.stats').each(function(){
@@ -14,7 +13,7 @@ $(window).load(function(){
 		$(window).scroll(function(){
 			if ( isInView($self[0]) && !(counted) ) {
 				counted = true;
-				$('.count').each(function(){
+				$('.count').each(function(){			
 					var $self = $(this);
 					var to = parseInt($(this).children('.n').text());
 					$({ n: 0 }).animate({ n: to}, {
@@ -30,9 +29,9 @@ $(window).load(function(){
 });
 $(function(){
 	var counted = false;
-
+	
 	$(window).scroll(function(){
-
+		
 		$('.event').each(function(){
 			if ( isInView($(this)[0]) ) {
 				$(this).find('.col-logo').removeClass('offset');
@@ -49,13 +48,13 @@ function isInView(element) {
 	var left = element.offsetLeft;
 	var width = element.offsetWidth;
 	var height = element.offsetHeight;
-
+	
 	while(element.offsetParent) {
 	element = element.offsetParent;
 	top += element.offsetTop;
 	left += element.offsetLeft;
 	}
-
+	
 	return (
 	top < (window.pageYOffset + window.innerHeight) &&
 	left < (window.pageXOffset + window.innerWidth) &&
@@ -69,7 +68,7 @@ $(function(){
 			$(this).parent().removeClass('open').find('.content').slideUp(750, 'easeOutQuint');
 		} else {
 			$('.faq').removeClass('open').find('.content').slideUp(750, 'easeOutQuint');
-
+			
 			$(this).parent().addClass('open').find('.content').slideDown(750, 'easeOutQuint');
 		}
 	});
@@ -106,7 +105,7 @@ $(function(){
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- *
+ * 
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
@@ -184,7 +183,7 @@ $(function(){
 							count++;
 						}
 					});
-
+					
 					// progress is the proportion of completed images / all the images
 					progress = count / $('#assets').children('img').length;
 
@@ -218,28 +217,28 @@ $(function(){
 
 		loader.setProgressFn( simulationFn );
 	}
-
+	
 	function noscroll() {
 		window.scrollTo( 0, 0 );
 	}
-
+	
 	// init preloader if needed
-	var t,
+	var t, 
 		i,
 		tt;
-
+	
 	clearTimeout(t);
 	t = setTimeout(function(){ // preload if the document.readyState isn't complete in 500ms
 		clearInterval(i);
 		$('.ip-header').fadeIn();
 		init();
-
+		
 		clearTimeout(tt);
 		tt = setTimeout(function(){
 			$('body').addClass('fadeIn');
 		}, 500);
 	}, 500);
-
+	
 	clearInterval(i);
 	i = setInterval(function(){ // check if the document.readyState is complete every 10ms
 		if ( document.readyState == "complete" ) { // don't preload
@@ -249,7 +248,7 @@ $(function(){
 			$('body').addClass('fadeIn');
 		}
 	}, 10);
-
+	
 })();
 $(function(){
 	var i = 0,
@@ -265,7 +264,7 @@ $(function(){
 			'img/devices.png',
 			'img/entrepeneurship.png'
 		];
-
+	
 	for ( item = 0; item < taglines.length; item++ ) {
 		$('header.home .t-trigger-wrapper').append(
 			$(document.createElement('span'))
@@ -273,20 +272,20 @@ $(function(){
 				.attr('data-ticker-item', item)
 		);
 	}
-
+	
 	$('.feature')
 		.find('h1')
 			.html(taglines[i])
 			.end()
 		.find('img')
 			.attr('src', images[i]);
-
+	
 	$('.t-trigger[data-ticker-item="' + i + '"]').addClass('active');
-
+	
 	clearInterval(t);
-
+	
 	T();
-
+	
 	$('.t-trigger').click(function(){
 		if ( i != parseInt($(this).attr('data-ticker-item')) ) {
 			clearInterval(t);
@@ -300,7 +299,7 @@ $(function(){
 			T();
 		}
 	});
-
+	
 	$('.t-increment').click(function(){
 		clearInterval(t);
 		$('header.home')
@@ -312,7 +311,7 @@ $(function(){
 		TT();
 		T();
 	});
-
+	
 	$('.t-decrement').click(function(){
 		clearInterval(t);
 		$('header.home')
@@ -324,17 +323,17 @@ $(function(){
 		TT();
 		T();
 	});
-
+	
 	if ( $('html').hasClass('no-touch') ) {
 		$('header.home').on('mouseenter', function(){
 			$('.t-increment, .t-decrement').fadeIn(500);
 		});
-
+		
 		$('header.home').on('mouseleave', function(){
 			$('.t-increment, .t-decrement').fadeOut(500);
 		});
 	}
-
+	
 	function TT() {
 		tt = setTimeout(function(){
 			$('.feature')
@@ -350,7 +349,7 @@ $(function(){
 					.addClass('active');
 		}, 500);
 	}
-
+	
 	function T() {
 		t = setInterval(function(){
 			$('header.home')

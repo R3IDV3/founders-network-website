@@ -39,6 +39,11 @@ html {
 	clear: both;
 }
 
+/* apply this class to reset cursor */
+.no-link {
+	cursor: default !important;
+}
+
 /* Main styles */
 body {
 	font-family: $sans-serif;
@@ -533,6 +538,10 @@ a {
 			width: 50%;
 		}
 	}
+}
+
+.edu-icons {
+
 }
 
 .team {
@@ -1492,7 +1501,12 @@ nav {
 			}
 		}
 	}
+}
 
+.education {
+	background: transparent url('../img/testimonial-education.jpg') center/cover no-repeat;
+	height: (997/3644 * 100) + vw; // aspect ratio of testimonial/ sponsors images
+	margin: 100px 0;
 }
 
 .testimonial {
