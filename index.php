@@ -1,7 +1,7 @@
 <?php
-	
+
 	include 'router.php';
-	
+
 	new Router(array(
 		'/' => 'home.php',
 		'/about' => 'about.php',
@@ -15,7 +15,8 @@
 		'/director-applications' => 'director-applications.php',
 		'/director-application-results' => 'aresults.php',
 		'/join' => 'early-bird-registration.php',
-		'/join-results' => 'eearesults.php'
+		'/join-results' => 'eearesults.php',
+		'/education' => 'education.php'
 	));
-	
+
 	// '/apply/education-executive' => 'education-executive-application.php',
