@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Western Founders Network - About Us</title>
+		<title>Western Founders Network - Education</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 	</head>
