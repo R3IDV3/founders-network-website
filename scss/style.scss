@@ -1507,6 +1507,19 @@ nav {
 	background: transparent url('../img/testimonial-education.jpg') center/cover no-repeat;
 	height: (997/3644 * 100) + vw; // aspect ratio of testimonial/ sponsors images
 	margin: 100px 0;
+	
+	.stats {
+    	//position: absolute;
+    	top: 50%;
+    	transform: translate3d(0, -50%, 0);
+    	
+    	.stat {
+        	
+    		i {
+    			color: rgba($beige,0.5);
+    		}
+    	}
+	}
 }
 
 .testimonial {
