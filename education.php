@@ -13,7 +13,7 @@
 			<header>
 				<section class="site-section-heading -education">
 					<div class="ac">
-						<h1 class="small-caps site-section-title">Education &amp; Projects Portfolio</h1>
+						<h1 class="small-caps site-section-title">Education <span class="char">&amp;</span> Projects</h1>
 						<p class="serif"><em>Bonding over technology breeds innovation and creates partnerships that can last forever. Founders Network is commited to create a collaborative environment where student can build, break, and most importantly, learn together.</em></p>
 					</div>
 				</section>
@@ -26,7 +26,10 @@
 					<p>The Education &amp; Projects portfolio is here to help you get your hands dirty and write some code. Club members will have the opportunity to work on projects throughout the year and attend educational sessions to learn about new technologies and upcoming trends in the industry. The Education &amp; Projects Portfolio will help you develop the necessary skills to bootstrap your next startup, create an MVP, or just learn about what technologies the top tech companies are using.
 					</p>
 				</header>
-				<section class="stats">
+			</article>
+
+			<article class="education">
+    			<section class="stats">
 					<div class="stat">
 						<div class="fit"><i class="fa fa-users" aria-hidden="true"></i></div>
 						<h1 class="small-caps fit">Meet People</h1>
@@ -41,9 +44,6 @@
 						<h1 class="small-caps fit">Develop Portfolio</h1>
 					</div>
 				</section>
-			</article>
-
-			<article class="education">
 			</article>
 
 			<section class="programs">
