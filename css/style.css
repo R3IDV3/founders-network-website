@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://use.fontawesome.com/c933a5aebb.css);
 /* Resets */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic);
 *,
@@ -35,6 +35,11 @@ html {
 
 .cf:after {
   clear: both;
+}
+
+/* apply this class to reset cursor */
+.no-link {
+  cursor: default !important;
 }
 
 /* Main styles */
@@ -776,15 +781,15 @@ a:hover {
 				animation-delay: 1s;
 
 	}
-	
+
 	@-webkit-keyframes animLoadedNavLogo {
-		to { 
+		to {
 			opacity: 1;
 		}
 	}
-	
+
 	@keyframes animLoadedNavLogo {
-		to { 
+		to {
 			opacity: 1;
 		}
 	}
@@ -1149,6 +1154,7 @@ header .site-section-heading {
   height: 22.22222vw;
   -webkit-animation: fadeIn 1.5s;
   animation: fadeIn 1.5s;
+  text-shadow: 0px 0px 20px black;
 }
 
 header .site-section-heading.-events {
@@ -1211,6 +1217,10 @@ header .site-section-heading.-applications {
 
 header .site-section-heading.-social {
   background: transparent url("../img/site-section-header-social.jpg") center/cover no-repeat;
+}
+
+header .site-section-heading.-education {
+  background: transparent url("../img/site-section-header-education.jpg") center/cover no-repeat;
 }
 
 nav {
@@ -1415,6 +1425,34 @@ nav svg path {
     width: 100%;
     height: 100%;
     color: white;
+  }
+}
+
+.education {
+  background: transparent url("../img/testimonial-education.jpg") center/cover no-repeat;
+  height: 27.36004vw;
+  margin: 100px 0;
+}
+
+.education .stats {
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+
+.education .stats .stat i {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (orientation: portrait) {
+  .education {
+    height: 100%;
+  }
+  .education .stats {
+    padding-top: 50px;
+    transform: translate3d(0, 0, 0);
+  }
+  .education .stats .stat {
+    width: 100%;
   }
 }
 
