@@ -1,10 +1,10 @@
 <?php
-	
+
 	class Router {
-		
+
 		function __construct($routes) {
 			/**
-			 * Get the requested uri and search for it against the $routes array, 
+			 * Get the requested uri and search for it against the $routes array,
 			 * displaying the corresponding file if possible
 			 *
 			 * @param array $routes
