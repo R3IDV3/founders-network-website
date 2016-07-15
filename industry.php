@@ -28,7 +28,23 @@
 				</header>
 			</article>
 
-			<article class="industry">
+			<article>
+				<article class="companies jobs" style="margin-bottom: 100px;">
+					<p class="small-caps companies-title">Members <span class="char">&</span> Alumni have landed positions at</p>
+					<div class="companies-wrapper with-title">
+						<div class="company">
+							<img src="img/microsoft-sponsor.png">
+						</div><div class="company">
+							<img src="img/ibm-white.png">
+						</div><div class="company">
+							<img src="img/blackberry-white.png">
+						</div><div class="company">
+							<img src="img/facebook-white.png">
+						</div><div class="company">
+							<img src="img/google-white.png">
+						</div>
+					</div>
+				</article>
 			</article>
 
 			<section class="programs">
