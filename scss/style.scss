@@ -1225,6 +1225,7 @@ header {
 		height: (1088/4896 * 100) + vw; // aspect ratio of site-section-heading images
 		-webkit-animation: fadeIn 1.5s;
 				animation: fadeIn 1.5s;
+        text-shadow: 0px 0px 20px black;
 
 		&.-events {
 			background: transparent url('../img/site-section-header-events.jpg') center/cover no-repeat;
