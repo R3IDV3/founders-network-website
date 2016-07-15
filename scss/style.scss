@@ -1520,6 +1520,19 @@ nav {
     		}
     	}
 	}
+	
+	@include portrait() {
+    	height: 100%;
+    	
+    	.stats {
+        	padding-top: 50px;
+        	transform: translate3d(0, 0, 0);
+        	
+        	.stat {
+            	width: 100%;
+        	}
+    	}
+	}
 }
 
 .testimonial {
