@@ -30,7 +30,7 @@
 
 			<article>
 				<article class="companies jobs" style="margin-bottom: 100px;">
-					<p class="small-caps companies-title">Members <span class="char">&</span> Alumni have landed positions at</p>
+					<p class="small-caps companies-title">Members <span class="char">&amp;</span> Alumni have landed positions at</p>
 					<div class="companies-wrapper with-title">
 						<div class="company">
 							<img src="img/microsoft-sponsor.png">

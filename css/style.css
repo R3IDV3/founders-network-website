@@ -1223,6 +1223,10 @@ header .site-section-heading.-education {
   background: transparent url("../img/site-section-header-education.jpg") center/cover no-repeat;
 }
 
+header .site-section-heading.-industry {
+  background: transparent url("../img/site-section-header-industry.jpg") center/cover no-repeat;
+}
+
 nav {
   position: relative;
   top: 0;
@@ -1426,6 +1430,12 @@ nav svg path {
     height: 100%;
     color: #FBF8EC;
   }
+}
+
+.industry {
+  background: transparent url("../img/testimonial-industry.jpg") center/cover no-repeat;
+  height: 27.36004vw;
+  margin: 100px 0;
 }
 
 .education {
