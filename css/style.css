@@ -46,7 +46,7 @@ html {
 body {
   font-family: "Avenir", "Helvetica Neue", Helvetica, "Lato", "Segoe UI", Arial, sans-serif;
   color: #CECECE;
-  background: #1A2435;
+  background: #233148;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
@@ -225,7 +225,7 @@ a:hover {
 }
 
 .btn:hover {
-  color: #1A2435;
+  color: #233148;
   background: white;
 }
 
@@ -337,7 +337,7 @@ a:hover {
 }
 
 .diamond-icon:hover i {
-  color: #1A2435;
+  color: #233148;
 }
 
 @media only screen and (orientation: portrait) {
@@ -431,7 +431,7 @@ a:hover {
 
 .faqs .faq.open .title {
   background: white !important;
-  color: #1A2435 !important;
+  color: #233148 !important;
 }
 
 .faqs .faq .title {
@@ -445,7 +445,7 @@ a:hover {
 
 .faqs .faq .title:hover {
   background: white;
-  color: #1A2435;
+  color: #233148;
 }
 
 .faqs .faq .title h1 {
@@ -578,7 +578,7 @@ a:hover {
 .schedule .item .details .date-wrapper {
   position: relative;
   background-color: rgba(255, 255, 255, 0.5);
-  color: #1A2435;
+  color: #233148;
   width: 85px;
   height: 85px;
   border-radius: 50%;
@@ -708,7 +708,7 @@ a:hover {
 }
 
 .ip-header .ip-logo svg path {
-  fill: #1A2435;
+  fill: #233148;
 }
 
 .ip-header .ip-loader {
@@ -726,7 +726,7 @@ a:hover {
 
 .ip-header .ip-loader svg path.ip-loader-circle {
   transition: stroke-dashoffset 0.2s;
-  stroke: #1A2435;
+  stroke: #233148;
 }
 
 .ip-header .ip-inner {
@@ -1128,7 +1128,7 @@ header.mcc #content-wrapper #content .btn {
 }
 
 header.mcc #content-wrapper #content .btn:hover {
-  color: #1A2435;
+  color: #233148;
   text-decoration: none;
 }
 
@@ -1221,6 +1221,10 @@ header .site-section-heading.-social {
 
 header .site-section-heading.-education {
   background: transparent url("../img/site-section-header-education.jpg") center/cover no-repeat;
+}
+
+header .site-section-heading.-entrepreneurship {
+  background: transparent url("../img/site-section-header-entrepreneurship.jpg") center/cover no-repeat;
 }
 
 nav {
@@ -1390,7 +1394,7 @@ nav svg path {
 @media only screen and (orientation: portrait) {
   nav {
     height: 12.5vh;
-    background: #1A2435;
+    background: #233148;
   }
   nav i {
     font-size: 1.5em !important;
@@ -1592,11 +1596,11 @@ nav svg path {
 }
 
 .event:nth-of-type(even) h1, .event:nth-of-type(even) p {
-  color: #1A2435;
+  color: #233148;
 }
 
 .event:nth-of-type(even) a:hover {
-  color: #1A2435;
+  color: #233148;
 }
 
 .event:last-of-type {
@@ -1674,7 +1678,7 @@ nav svg path {
 }
 
 .event .col-logo:last-child {
-  color: #1A2435;
+  color: #233148;
 }
 
 .event p {
@@ -1864,7 +1868,7 @@ nav svg path {
 
 .form button:hover {
   background: white;
-  color: #1A2435;
+  color: #233148;
 }
 
 .form button:focus {
@@ -1932,13 +1936,13 @@ nav svg path {
 }
 
 .site-footer .site-footer-content h1 {
-  color: #1A2435;
+  color: #233148;
   font-size: 2em;
   padding-left: 0;
 }
 
 .site-footer .site-footer-content p {
-  color: #1A2435;
+  color: #233148;
 }
 
 .site-footer .site-footer-content ul {
@@ -1949,7 +1953,7 @@ nav svg path {
 
 .site-footer .site-footer-content ul li {
   position: relative;
-  color: #1A2435;
+  color: #233148;
 }
 
 .site-footer .site-footer-content ul li.post-medium {
@@ -1969,7 +1973,7 @@ nav svg path {
 
 .site-footer .site-footer-content ul li .date {
   font-size: 0.95em;
-  color: rgba(26, 36, 53, 0.75);
+  color: rgba(35, 49, 72, 0.75);
   padding: 6px 0 8px 0;
   margin-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1977,7 +1981,7 @@ nav svg path {
 
 .site-footer .site-footer-content a {
   text-decoration: none;
-  color: #1A2435;
+  color: #233148;
 }
 
 .site-footer .site-footer-content a::after {
@@ -1986,7 +1990,7 @@ nav svg path {
 }
 
 .site-footer .site-footer-content a:hover {
-  color: #1A2435;
+  color: #233148;
   text-decoration: underline;
 }
 
@@ -2001,13 +2005,13 @@ nav svg path {
 .site-footer .site-footer-content .social-icons a {
   font-size: 2em;
   margin-right: 0.9em;
-  color: #1A2435;
+  color: #233148;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .site-footer .site-footer-content .social-icons a:hover {
-  color: rgba(26, 36, 53, 0.75);
+  color: rgba(35, 49, 72, 0.75);
 }
 
 .site-footer .site-footer-content .social-icons a::after {
@@ -2053,7 +2057,7 @@ nav svg path {
     max-width: 55%;
   }
   .site-footer .site-footer-content .social-icons a {
-    color: rgba(26, 36, 53, 0.5);
+    color: rgba(35, 49, 72, 0.5);
   }
   .site-footer .site-footer-content .social-icons a:last-child {
     margin-right: 0;
