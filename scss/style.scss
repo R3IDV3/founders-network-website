@@ -117,7 +117,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: $violet;
+	color: $color__link;
 	outline: none;
 	transition: color 0.3s;
 
@@ -713,7 +713,7 @@ a {
 				border-left: none;
 
 				a {
-					color: $violet;
+					color: $color__link;
 				}
 
 				img {
@@ -1291,6 +1291,10 @@ header {
 		&.-education {
 			background: transparent url('../img/site-section-header-education.jpg') center/cover no-repeat;
 		}
+
+		&.-industry {
+			background: transparent url('../img/site-section-header-industry.jpg') center/cover no-repeat;
+        }
 		
 		&.-entrepreneurship {
     		background: transparent url('../img/site-section-header-entrepreneurship.jpg') center/cover no-repeat;
@@ -1513,18 +1517,24 @@ nav {
 	}
 }
 
+.industry {
+	background: transparent url('../img/testimonial-industry.jpg') center/cover no-repeat;
+	height: (997/3644 * 100) + vw; // aspect ratio of testimonial/ sponsors images
+	margin: 100px 0;
+}
+
 .education {
 	background: transparent url('../img/testimonial-education.jpg') center/cover no-repeat;
 	height: (997/3644 * 100) + vw; // aspect ratio of testimonial/ sponsors images
 	margin: 100px 0;
-	
+
 	.stats {
     	//position: absolute;
     	top: 50%;
     	transform: translate3d(0, -50%, 0);
-    	
+
     	.stat {
-        	
+
     		i {
     			color: rgba(white, 0.5);
     		}
@@ -1813,10 +1823,10 @@ nav {
 			}
 
 			a {
-				color: $violet;
+				color: $color__link;
 
 				&:hover {
-					color: $violet;
+					color: $color__link;
 				}
 			}
 		}

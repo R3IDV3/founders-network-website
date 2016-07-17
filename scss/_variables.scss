@@ -1,15 +1,21 @@
 // Colors
+$beige: #FBF8EC; // original beige
 $beige: white;
-$charcoal: #2F3040; // original black
+$charcoal: #2A2A2A; // original black
+$charcoal: #2F3040; // dark purple
 $charcoal: #1A2435; // darkest blue
 $charcoal: #233148; // lighter blue
 $rust: #944C4B;
 $rust: #DB716F;
 $sea: #788EB0;
-$violet: #6DC2F5;
+
+// Link color
+$violet: #5C5EDC; // original violet
+$maya-blue: #6DC2F5; // pale blue to replace links
 
 $color__text-main: $charcoal;
 $color__site-background: rgb(251, 251, 251);
+$color__link: $maya-blue;
 
 // Typography
 $sans-serif: "Avenir", 'Helvetica Neue', Helvetica, 'Lato', 'Segoe UI', Arial, sans-serif;
