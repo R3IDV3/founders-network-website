@@ -46,7 +46,7 @@ html {
 body {
   font-family: "Avenir", "Helvetica Neue", Helvetica, "Lato", "Segoe UI", Arial, sans-serif;
   color: #CECECE;
-  background: #1A2435;
+  background: #2A2A2A;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
@@ -64,7 +64,7 @@ body.layout-switch .ip-header {
 }
 
 h1 {
-  color: white;
+  color: #FBF8EC;
   font-size: 2.5em;
   font-weight: normal;
   margin: 0;
@@ -111,7 +111,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #6DC2F5;
+  color: #5C5EDC;
   outline: none;
   transition: color 0.3s;
 }
@@ -215,18 +215,18 @@ a:hover {
 .btn {
   display: inline-block;
   line-height: 1em;
-  border: 1px solid white;
+  border: 1px solid #FBF8EC;
   padding: 0.75em 2em;
   margin: 1em 0;
-  color: white;
+  color: #FBF8EC;
   font-weight: bold;
   font-size: 0.875em;
   transition: background 0.3s;
 }
 
 .btn:hover {
-  color: #1A2435;
-  background: white;
+  color: #2A2A2A;
+  background: #FBF8EC;
 }
 
 .btn:active {
@@ -235,7 +235,7 @@ a:hover {
 
 @media only screen and (orientation: portrait) {
   .btn:hover {
-    color: white;
+    color: #FBF8EC;
     background: transparent;
   }
 }
@@ -268,7 +268,7 @@ a:hover {
   display: block;
   width: 150px;
   height: 1px;
-  border-top: 1px solid white;
+  border-top: 1px solid #FBF8EC;
 }
 
 @media only screen and (orientation: portrait) {
@@ -301,7 +301,7 @@ a:hover {
   height: 40px;
   width: 40px;
   margin-right: 1em;
-  border: 1px solid white;
+  border: 1px solid #FBF8EC;
   background-color: transparent;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -319,7 +319,7 @@ a:hover {
 }
 
 .diamond-icon i {
-  color: white;
+  color: #FBF8EC;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -333,11 +333,11 @@ a:hover {
 }
 
 .diamond-icon:hover {
-  background-color: white;
+  background-color: #FBF8EC;
 }
 
 .diamond-icon:hover i {
-  color: #1A2435;
+  color: #2A2A2A;
 }
 
 @media only screen and (orientation: portrait) {
@@ -357,7 +357,7 @@ a:hover {
     background-color: transparent;
   }
   .diamond-icon:hover i {
-    color: white;
+    color: #FBF8EC;
   }
   .diamond-icon i {
     font-size: 1.2em;
@@ -395,7 +395,7 @@ a:hover {
   display: block;
   width: 60px;
   height: 1px;
-  border-top: 1px solid white;
+  border-top: 1px solid #FBF8EC;
 }
 
 .programs .program p, .stats .program p, .team .program p, .schedule .program p, .stats .stat p, .team .team-member p {
@@ -430,12 +430,12 @@ a:hover {
 }
 
 .faqs .faq.open .title {
-  background: white !important;
-  color: #1A2435 !important;
+  background: #FBF8EC !important;
+  color: #2A2A2A !important;
 }
 
 .faqs .faq .title {
-  border: 1px solid white;
+  border: 1px solid #FBF8EC;
   border-radius: 0.5em;
   cursor: pointer;
   font-size: 1em;
@@ -444,8 +444,8 @@ a:hover {
 }
 
 .faqs .faq .title:hover {
-  background: white;
-  color: #1A2435;
+  background: #FBF8EC;
+  color: #2A2A2A;
 }
 
 .faqs .faq .title h1 {
@@ -470,7 +470,7 @@ a:hover {
   }
   .faqs .faq .title:hover {
     background: transparent;
-    color: white;
+    color: #FBF8EC;
   }
 }
 
@@ -490,7 +490,7 @@ a:hover {
 }
 
 .stats .stat i {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(251, 248, 236, 0.25);
   font-size: 3em;
   margin-bottom: 25px;
 }
@@ -577,8 +577,8 @@ a:hover {
 
 .schedule .item .details .date-wrapper {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #1A2435;
+  background-color: rgba(251, 248, 236, 0.5);
+  color: #2A2A2A;
   width: 85px;
   height: 85px;
   border-radius: 50%;
@@ -610,7 +610,7 @@ a:hover {
   font-size: 0.8em;
   text-align: left;
   display: inline-block;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(251, 248, 236, 0.5);
   width: calc(100% - 200px);
   padding: 0 25px 25px 25px;
   transition: all 0.3s;
@@ -630,11 +630,11 @@ a:hover {
 }
 
 .schedule .item:hover .date-wrapper {
-  background-color: white;
+  background-color: #fbf8ec;
 }
 
 .schedule .item:hover .description {
-  border-left: 1px solid white;
+  border-left: 1px solid #fbf8ec;
 }
 
 @media only screen and (orientation: portrait) {
@@ -644,17 +644,17 @@ a:hover {
   .schedule .item {
     margin-bottom: 200px;
     padding-bottom: 50px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FBF8EC;
   }
   .schedule .item .details {
     display: block;
     width: 100%;
   }
   .schedule .item .details .date-wrapper {
-    background-color: white;
+    background-color: #fbf8ec;
     width: 200px;
     height: 200px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fbf8ec;
   }
   .schedule .item .description {
     display: block;
@@ -662,7 +662,7 @@ a:hover {
     border-left: none;
   }
   .schedule .item .description a {
-    color: #6DC2F5;
+    color: #5C5EDC;
   }
   .schedule .item .description img {
     width: 70% !important;
@@ -678,7 +678,7 @@ a:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  background: white;
+  background: #FBF8EC;
   z-index: 1;
 }
 
@@ -708,7 +708,7 @@ a:hover {
 }
 
 .ip-header .ip-logo svg path {
-  fill: #1A2435;
+  fill: #2A2A2A;
 }
 
 .ip-header .ip-loader {
@@ -726,7 +726,7 @@ a:hover {
 
 .ip-header .ip-loader svg path.ip-loader-circle {
   transition: stroke-dashoffset 0.2s;
-  stroke: #1A2435;
+  stroke: #2A2A2A;
 }
 
 .ip-header .ip-inner {
@@ -810,7 +810,7 @@ a:hover {
 
 .loaded .ip-logo svg path {
   transition: all 0.5s ease 0.3s;
-  fill: white;
+  fill: #FBF8EC;
 }
 
 @-webkit-keyframes animLoadedLogo {
@@ -935,7 +935,7 @@ header.home table.feature.animate-out img {
 }
 
 header.home table.feature .feature-link {
-  color: white;
+  color: #FBF8EC;
   text-decoration: none;
 }
 
@@ -945,7 +945,7 @@ header.home table.feature .feature-link::after {
 }
 
 header.home table.feature .feature-link:hover {
-  color: white;
+  color: #FBF8EC;
   text-decoration: none;
   opacity: 0.75;
 }
@@ -966,7 +966,7 @@ header.home table.feature tr td:nth-child(2) {
 }
 
 header.home table.feature h1 {
-  color: white;
+  color: #FBF8EC;
   font-size: 2.5em;
   font-weight: 300;
   padding-left: 15%;
@@ -991,7 +991,7 @@ header.home table.feature svg {
 }
 
 header.home table.feature svg path {
-  fill: white;
+  fill: #FBF8EC;
 }
 
 header.home .t-decrement, header.home .t-increment {
@@ -1111,7 +1111,7 @@ header.mcc #content-wrapper #content h1 {
 }
 
 header.mcc #content-wrapper #content h2 {
-  color: white;
+  color: #FBF8EC;
   font-size: 2em;
   font-weight: 700;
   font-style: italic;
@@ -1128,7 +1128,7 @@ header.mcc #content-wrapper #content .btn {
 }
 
 header.mcc #content-wrapper #content .btn:hover {
-  color: #1A2435;
+  color: #2A2A2A;
   text-decoration: none;
 }
 
@@ -1307,7 +1307,7 @@ nav .nav ul li:hover {
 }
 
 nav .nav ul li a {
-  color: white;
+  color: #FBF8EC;
   position: relative;
   display: inline-block;
 }
@@ -1392,25 +1392,25 @@ nav svg {
 }
 
 nav svg path {
-  fill: white;
+  fill: #FBF8EC;
 }
 
 @media only screen and (orientation: portrait) {
   nav {
     height: 12.5vh;
-    background: #1A2435;
+    background: #2A2A2A;
   }
   nav i {
     font-size: 1.5em !important;
     right: 5vw;
-    color: white;
+    color: #FBF8EC;
   }
   nav svg {
     left: 5vw;
     height: 50%;
   }
   nav svg path {
-    fill: white;
+    fill: #FBF8EC;
   }
   nav ul {
     list-style: none;
@@ -1422,17 +1422,17 @@ nav svg path {
     display: block;
     width: 100%;
     height: 7.5vh;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(251, 248, 236, 0.5);
   }
   nav ul li:first-child {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(251, 248, 236, 0.5);
   }
   nav ul li a {
     display: block;
     line-height: 7.5vh;
     width: 100%;
     height: 100%;
-    color: white;
+    color: #FBF8EC;
   }
 }
 
@@ -1454,7 +1454,7 @@ nav svg path {
 }
 
 .education .stats .stat i {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(251, 248, 236, 0.5);
 }
 
 @media only screen and (orientation: portrait) {
@@ -1602,15 +1602,15 @@ nav svg path {
 }
 
 .event:nth-of-type(even) {
-  background-color: white;
+  background-color: #FBF8EC;
 }
 
 .event:nth-of-type(even) h1, .event:nth-of-type(even) p {
-  color: #1A2435;
+  color: #2A2A2A;
 }
 
 .event:nth-of-type(even) a:hover {
-  color: #1A2435;
+  color: #2A2A2A;
 }
 
 .event:last-of-type {
@@ -1684,11 +1684,11 @@ nav svg path {
 
 .event .col-logo i {
   font-size: 10em !important;
-  color: white;
+  color: #FBF8EC;
 }
 
 .event .col-logo:last-child {
-  color: #1A2435;
+  color: #2A2A2A;
 }
 
 .event p {
@@ -1720,10 +1720,10 @@ nav svg path {
     font-size: 1.4em;
   }
   .event .col-text a {
-    color: #6DC2F5;
+    color: #5C5EDC;
   }
   .event .col-text a:hover {
-    color: #6DC2F5;
+    color: #5C5EDC;
   }
   .event .col-logo {
     display: none;
@@ -1736,7 +1736,7 @@ nav svg path {
 }
 
 .form .input-group, .form .question {
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(251, 248, 236, 0.25);
   border-radius: 0.5em;
   padding: 1em;
   margin-bottom: 25px;
@@ -1756,7 +1756,7 @@ nav svg path {
 }
 
 .form .input-group.focus, .form .focus.question {
-  border-color: white;
+  border-color: #FBF8EC;
 }
 
 .form .error-message {
@@ -1769,7 +1769,7 @@ nav svg path {
 .form input[type="text"], .form input[type="email"], .form input[type="number"], .form textarea {
   background: transparent;
   border: none;
-  color: white;
+  color: #FBF8EC;
   font-family: "Avenir", "Helvetica Neue", Helvetica, "Lato", "Segoe UI", Arial, sans-serif;
   font-size: 1em;
   line-height: 1em;
@@ -1778,20 +1778,20 @@ nav svg path {
 }
 
 .form input[type="text"]::-webkit-input-placeholder, .form input[type="email"]::-webkit-input-placeholder, .form input[type="number"]::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(251, 248, 236, 0.25);
   line-height: 1.5em;
 }
 
 .form input[type="text"]:-moz-placeholder, .form input[type="email"]:-moz-placeholder, .form input[type="number"]:-moz-placeholder, .form textarea:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(251, 248, 236, 0.25);
 }
 
 .form input[type="text"]::-moz-placeholder, .form input[type="email"]::-moz-placeholder, .form input[type="number"]::-moz-placeholder, .form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(251, 248, 236, 0.25);
 }
 
 .form input[type="text"]:-ms-input-placeholder, .form input[type="email"]:-ms-input-placeholder, .form input[type="number"]:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(251, 248, 236, 0.25);
 }
 
 .form input[type="text"]:focus, .form input[type="email"]:focus, .form input[type="number"]:focus, .form textarea:focus {
@@ -1812,7 +1812,7 @@ nav svg path {
 }
 
 .form fieldset {
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(251, 248, 236, 0.25);
   border-radius: 0.5em;
   padding: 1em;
   margin-bottom: 25px;
@@ -1843,12 +1843,12 @@ nav svg path {
 .form .pos-desc-toggle {
   cursor: pointer;
   float: right;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(251, 248, 236, 0.5);
   transition: color 0.3s;
 }
 
 .form .pos-desc-toggle:hover {
-  color: white;
+  color: #FBF8EC;
 }
 
 .form .pos-desc-content {
@@ -1863,11 +1863,11 @@ nav svg path {
 }
 
 .form button {
-  border: 1px solid white;
+  border: 1px solid #FBF8EC;
   border-radius: 0.5em;
   padding: 1em 2em;
   margin-right: 10px;
-  color: white;
+  color: #FBF8EC;
   cursor: pointer;
   font-size: 0.75em;
   background: transparent;
@@ -1877,8 +1877,8 @@ nav svg path {
 }
 
 .form button:hover {
-  background: white;
-  color: #1A2435;
+  background: #FBF8EC;
+  color: #2A2A2A;
 }
 
 .form button:focus {
@@ -1886,14 +1886,14 @@ nav svg path {
 }
 
 .form button[disabled] {
-  border-color: rgba(255, 255, 255, 0.5);
-  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(251, 248, 236, 0.5);
+  color: rgba(251, 248, 236, 0.5);
   cursor: default;
 }
 
 .form button[disabled]:hover {
   background: transparent;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(251, 248, 236, 0.5);
 }
 
 .form button[disabled] + .error-message {
@@ -1901,12 +1901,12 @@ nav svg path {
 }
 
 .form .application-process {
-  color: white;
+  color: #FBF8EC;
 }
 
 .site-footer {
   position: relative;
-  background-color: white;
+  background-color: #FBF8EC;
   min-height: 300px;
   margin-top: 100px;
   width: 100%;
@@ -1946,13 +1946,13 @@ nav svg path {
 }
 
 .site-footer .site-footer-content h1 {
-  color: #1A2435;
+  color: #2A2A2A;
   font-size: 2em;
   padding-left: 0;
 }
 
 .site-footer .site-footer-content p {
-  color: #1A2435;
+  color: #2A2A2A;
 }
 
 .site-footer .site-footer-content ul {
@@ -1963,7 +1963,7 @@ nav svg path {
 
 .site-footer .site-footer-content ul li {
   position: relative;
-  color: #1A2435;
+  color: #2A2A2A;
 }
 
 .site-footer .site-footer-content ul li.post-medium {
@@ -1983,7 +1983,7 @@ nav svg path {
 
 .site-footer .site-footer-content ul li .date {
   font-size: 0.95em;
-  color: rgba(26, 36, 53, 0.75);
+  color: rgba(42, 42, 42, 0.75);
   padding: 6px 0 8px 0;
   margin-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1991,7 +1991,7 @@ nav svg path {
 
 .site-footer .site-footer-content a {
   text-decoration: none;
-  color: #1A2435;
+  color: #2A2A2A;
 }
 
 .site-footer .site-footer-content a::after {
@@ -2000,7 +2000,7 @@ nav svg path {
 }
 
 .site-footer .site-footer-content a:hover {
-  color: #1A2435;
+  color: #2A2A2A;
   text-decoration: underline;
 }
 
@@ -2015,13 +2015,13 @@ nav svg path {
 .site-footer .site-footer-content .social-icons a {
   font-size: 2em;
   margin-right: 0.9em;
-  color: #1A2435;
+  color: #2A2A2A;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .site-footer .site-footer-content .social-icons a:hover {
-  color: rgba(26, 36, 53, 0.75);
+  color: rgba(42, 42, 42, 0.75);
 }
 
 .site-footer .site-footer-content .social-icons a::after {
@@ -2067,7 +2067,7 @@ nav svg path {
     max-width: 55%;
   }
   .site-footer .site-footer-content .social-icons a {
-    color: rgba(26, 36, 53, 0.5);
+    color: rgba(42, 42, 42, 0.5);
   }
   .site-footer .site-footer-content .social-icons a:last-child {
     margin-right: 0;
