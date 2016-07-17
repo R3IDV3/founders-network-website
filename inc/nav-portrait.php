@@ -12,7 +12,7 @@
 			    <a class="with-submenu">Get Involved</a>
 			    <ul>
     			    <li><a href="/join">Early Bird Registration</a></li>
-    			    <li><a href="/director-applications">Apply to be an Executive</a></li>
+    			    <li><a href="/director-applications">Become an Executive</a></li>
 			    </ul>
             </li>
 			<li>
