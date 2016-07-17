@@ -46,7 +46,7 @@ html {
 body {
   font-family: "Avenir", "Helvetica Neue", Helvetica, "Lato", "Segoe UI", Arial, sans-serif;
   color: #CECECE;
-  background: #233148;
+  background: #fbfbfb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
@@ -64,7 +64,7 @@ body.layout-switch .ip-header {
 }
 
 h1 {
-  color: white;
+  color: #233148;
   font-size: 2.5em;
   font-weight: normal;
   margin: 0;
@@ -86,7 +86,7 @@ h1.site-section-title::after {
   display: block;
   width: 25px;
   height: 2px;
-  border-top: 2px solid white;
+  border-top: 2px solid #233148;
 }
 
 @media only screen and (orientation: portrait) {
@@ -106,7 +106,7 @@ h2 {
 p {
   font-size: 1.25em;
   line-height: 1.5;
-  color: white;
+  color: #233148;
 }
 
 a {
@@ -268,7 +268,7 @@ a:hover {
   display: block;
   width: 150px;
   height: 1px;
-  border-top: 1px solid white;
+  border-top: 1px solid #233148;
 }
 
 @media only screen and (orientation: portrait) {
@@ -301,7 +301,7 @@ a:hover {
   height: 40px;
   width: 40px;
   margin-right: 1em;
-  border: 1px solid white;
+  border: 1px solid #233148;
   background-color: transparent;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -319,7 +319,7 @@ a:hover {
 }
 
 .diamond-icon i {
-  color: white;
+  color: #233148;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -333,11 +333,11 @@ a:hover {
 }
 
 .diamond-icon:hover {
-  background-color: white;
+  background-color: #233148;
 }
 
 .diamond-icon:hover i {
-  color: #233148;
+  color: #fbfbfb;
 }
 
 @media only screen and (orientation: portrait) {
@@ -357,7 +357,7 @@ a:hover {
     background-color: transparent;
   }
   .diamond-icon:hover i {
-    color: white;
+    color: #233148;
   }
   .diamond-icon i {
     font-size: 1.2em;
@@ -395,7 +395,7 @@ a:hover {
   display: block;
   width: 60px;
   height: 1px;
-  border-top: 1px solid white;
+  border-top: 1px solid #233148;
 }
 
 .programs .program p, .stats .program p, .team .program p, .schedule .program p, .stats .stat p, .team .team-member p {
@@ -490,7 +490,7 @@ a:hover {
 }
 
 .stats .stat i {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(35, 49, 72, 0.25);
   font-size: 3em;
   margin-bottom: 25px;
 }
@@ -622,7 +622,7 @@ a:hover {
 
 .schedule .item .description ul {
   font-size: 1.1em;
-  color: white;
+  color: #233148;
 }
 
 .schedule .item .description .sponsors {
@@ -1157,6 +1157,10 @@ header .site-section-heading {
   text-shadow: 0px 0px 20px black;
 }
 
+header .site-section-heading p {
+  color: white;
+}
+
 header .site-section-heading.-events {
   background: transparent url("../img/site-section-header-events.jpg") center/cover no-repeat;
 }
@@ -1228,11 +1232,12 @@ header .site-section-heading.-entrepreneurship {
 }
 
 nav {
+  background-color: rgba(35, 49, 72, 0.1);
   position: relative;
   top: 0;
   left: 0;
   height: 85px;
-  border-bottom: 1px solid rgba(250, 247, 235, 0.2);
+  border-bottom: 1px solid rgba(35, 49, 72, 0.15);
 }
 
 nav .nav {
@@ -1286,7 +1291,7 @@ nav .nav ul li {
   margin: 0;
   margin: 0 20px 0 0px;
   font-size: 0.8125em;
-  border-bottom: 3px solid rgba(250, 247, 235, 0);
+  border-bottom: 3px solid rgba(35, 49, 72, 0);
   transition: all 0.3s;
 }
 
@@ -1295,15 +1300,15 @@ nav .nav ul li:first-child {
 }
 
 nav .nav ul li.active {
-  border-bottom: 3px solid #faf7eb;
+  border-bottom: 3px solid #233148;
 }
 
 nav .nav ul li:hover {
-  border-bottom: 3px solid rgba(250, 247, 235, 0.5);
+  border-bottom: 3px solid rgba(35, 49, 72, 0.5);
 }
 
 nav .nav ul li a {
-  color: white;
+  color: #233148;
   position: relative;
   display: inline-block;
 }
@@ -1388,7 +1393,7 @@ nav svg {
 }
 
 nav svg path {
-  fill: white;
+  fill: #233148;
 }
 
 @media only screen and (orientation: portrait) {
@@ -1418,17 +1423,17 @@ nav svg path {
     display: block;
     width: 100%;
     height: 7.5vh;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(35, 49, 72, 0.5);
   }
   nav ul li:first-child {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(35, 49, 72, 0.5);
   }
   nav ul li a {
     display: block;
     line-height: 7.5vh;
     width: 100%;
     height: 100%;
-    color: white;
+    color: #233148;
   }
 }
 
@@ -1444,6 +1449,10 @@ nav svg path {
 }
 
 .education .stats .stat i {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.education .stats .stat h1 {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1896,7 +1905,7 @@ nav svg path {
 
 .site-footer {
   position: relative;
-  background-color: white;
+  background-color: #233148;
   min-height: 300px;
   margin-top: 100px;
   width: 100%;
@@ -1936,13 +1945,13 @@ nav svg path {
 }
 
 .site-footer .site-footer-content h1 {
-  color: #233148;
+  color: #fbfbfb;
   font-size: 2em;
   padding-left: 0;
 }
 
 .site-footer .site-footer-content p {
-  color: #233148;
+  color: #fbfbfb;
 }
 
 .site-footer .site-footer-content ul {
@@ -1953,7 +1962,7 @@ nav svg path {
 
 .site-footer .site-footer-content ul li {
   position: relative;
-  color: #233148;
+  color: #fbfbfb;
 }
 
 .site-footer .site-footer-content ul li.post-medium {
@@ -1968,20 +1977,20 @@ nav svg path {
   left: 0;
   font-family: 'fontawesome';
   font-size: 1.5em;
-  color: rgba(0, 0, 0, 0.1);
+  color: rgba(251, 251, 251, 0.1);
 }
 
 .site-footer .site-footer-content ul li .date {
   font-size: 0.95em;
-  color: rgba(35, 49, 72, 0.75);
+  color: rgba(251, 251, 251, 0.75);
   padding: 6px 0 8px 0;
   margin-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(251, 251, 251, 0.1);
 }
 
 .site-footer .site-footer-content a {
   text-decoration: none;
-  color: #233148;
+  color: #fbfbfb;
 }
 
 .site-footer .site-footer-content a::after {
@@ -1990,7 +1999,7 @@ nav svg path {
 }
 
 .site-footer .site-footer-content a:hover {
-  color: #233148;
+  color: #fbfbfb;
   text-decoration: underline;
 }
 
@@ -2005,13 +2014,13 @@ nav svg path {
 .site-footer .site-footer-content .social-icons a {
   font-size: 2em;
   margin-right: 0.9em;
-  color: #233148;
+  color: #fbfbfb;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .site-footer .site-footer-content .social-icons a:hover {
-  color: rgba(35, 49, 72, 0.75);
+  color: rgba(251, 251, 251, 0.75);
 }
 
 .site-footer .site-footer-content .social-icons a::after {
@@ -2057,13 +2066,13 @@ nav svg path {
     max-width: 55%;
   }
   .site-footer .site-footer-content .social-icons a {
-    color: rgba(35, 49, 72, 0.5);
+    color: rgba(251, 251, 251, 0.5);
   }
   .site-footer .site-footer-content .social-icons a:last-child {
     margin-right: 0;
   }
   .site-footer .site-footer-content ul li .date {
-    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: rgba(251, 251, 251, 0.2);
   }
   .site-footer .site-footer-content .copyright {
     left: 10%;
