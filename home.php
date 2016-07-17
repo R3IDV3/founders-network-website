@@ -28,8 +28,8 @@
 			</header>
 			<article>
 				<header class="blurb">
-					<h1 class="small-caps">Welcome</h1>
-					<p>Founders Network is a platform for aspiring tech entrepreneurs at Western University. Our goal is to foster a startup culture on campus by giving students the knowhow and the means to put their ideas into action.</p>
+					<h1 class="small-caps">What is Founders Network?</h1>
+					<p>Founders Network is a vibrant biz-tech network that aims to cultivate a community of entrepreneurially minded individuals and promote programming literacy. Founders Network focuses on helping students propel their tech skills and creative goals through three channels: education, entrepreneurship, and industry.</p>
 				</header>
 				<section class="stats">
 					<div class="stat">
@@ -52,17 +52,20 @@
 				</section>
 				<section class="programs">
 					<div class="program">
-						<a class="diamond-icon" title="Learn More" href="programs.php"><i class="fa fa-code"></i></a>
-						<h1 class="small-caps">Educational Programs</h1>
-						<p>Founders Network's Educational Program aims to equip Western students with the necessary skills needed to bring their ideas to market. Students from across all faculties are welcome: from computer science students interested in iOS programming to business students with no prior programming background. Programs are taught by senior students who have experience in the field.</p>
+						<a class="diamond-icon" title="Learn More" href="/education"><i class="fa fa-code"></i></a>
+						<h1 class="small-caps">Education</h1>
+						<p>Monthly Seminars &amp; Workshops, Development Projects, Weekly Project Meetups &amp; Scrum, Github Portfolio, Product Showcase</p>
+						<a href="/education"> Learn More </a>
 					</div><div class="program">
-						<a class="diamond-icon" title="Learn More" href="events.php"><i class="fa fa-lightbulb-o"></i></a>
-						<h1 class="small-caps">Entrepreneurship Events</h1>
-						<p>The Founders network is designed not only to promote entrepreneurial spirit and advance technological learning, but also to connect driven individuals such as yourself with like minded peers. Our entrepreneurship events provide the opportunity to take a close look at successful startups, meet one-on-one with insightful entrepreneurs, and learn from industry experts.</p>
+						<a class="diamond-icon" title="Learn More" href="/entrepreneurship"><i class="fa fa-lightbulb-o"></i></a>
+						<h1 class="small-caps">Entrepreneurship</h1>
+						<p>Socials, Global Entrepreneurship Week, Ideas Workshops, Future View Conference, Entrepreneurial Speaker Series, Technology Showcase, Pitch Competitions</p>
+						<a href="/entrepreneurship"> Learn More </a>
 					</div><div class="program">
-						<a class="diamond-icon" title="Learn More" href="events.php"><i class="fa fa-pencil"></i></a>
-						<h1 class="small-caps">Technology Consulting</h1>
-						<p>The Microsoft Case Competition was the first ever non-technical business-tech consulting case competition geared towards business students who are interested in pursuing tech-related careers. Designed as a competitive event where business students got to analyze a real life scenario faced by Microsoft, they got a taste of what it is like to work for a world leading tech company’s business unit.</p>
+						<a class="diamond-icon" title="Learn More" href="/industry"><i class="fa fa-pencil"></i></a>
+						<h1 class="small-caps">Industry</h1>
+						<p>Case Competitions, Resume Workshops, Career Panels, Kickstarter Workshop, Career Fairs, Techlink, Algorithms Practice</p>
+						<a href="/industry"> Learn More </a>
 					</div>
 				</section>
 			</article>
@@ -72,7 +75,7 @@
 					<p class="attribution"><em></em></p>
 					<p class="small-caps attributor-title">Western News</p>
 				</div>
-			</article>	
+			</article>
 			<article>
 				<header class="blurb">
 					<h1 class="small-caps">Our Team</h1>
