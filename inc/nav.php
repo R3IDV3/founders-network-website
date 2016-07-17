@@ -2,13 +2,7 @@
 	<div class="nav left">
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li>
-			    <a class="with-submenu" href="/about">About Us</a>
-			    <ul>
-    			    <li><a href="/about/group-strategy">Group Strategy</a></li>
-    			    <li><a href="/about/team">Executive Team</a></li>
-			    </ul>
-            </li>
+			<li><a href="/about">About Us</a></li>
 			<li><a href="/team">Our Team</a></li>
 		</ul>
 	</div>
@@ -17,8 +11,21 @@
 	</div>
 	<div class="nav right">
 		<ul>
-			<li><a href="/programs">Programs</a></li>
-			<li><a href="/events">Events</a></li>
+			<li>
+			    <a class="with-submenu" href="">Get Involved</a>
+			    <ul>
+    			    <li><a href="/join">Early Bird Registration</a></li>
+    			    <li><a href="/director-applications">Apply to be an Executive</a></li>
+			    </ul>
+            </li>
+			<li>
+			    <a class="with-submenu" href="">Pillars</a>
+			    <ul>
+    			    <li><a href="/education">Education</a></li>
+    			    <li><a href="/entrepreneurship">Entrepreneurship</a></li>
+    			    <li><a href="/industry">Industry</a></li>
+			    </ul>
+            </li>
 			<li><a href="/faq">FAQ</a></li>
 		</ul>
 <!--
