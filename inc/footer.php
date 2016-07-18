@@ -38,12 +38,12 @@ Monitored by the technologies divison of Western Founders Network.
 				<h1 class="small-caps">Recent News</h1>
 				<ul class="news">
 					<li>
-						<a href="https://www.facebook.com/events/1492988367663912/">Join us at Startup Showcase!</a>
-						<div class="date">November 17, 2015</div>
+						<a href="/join">Early Bird Registration Available</a>
+						<div class="date">Jul 18, 2016</div>
 					</li>
 					<li>
-						<span>Education Executive Applications Have Closed</span>
-						<div class="date">October 30, 2015</div>
+						<a href="/director-applications">Director Applications Open</a>
+						<div class="date">Jul 18, 2016</div>
 					</li>
 <!--
 					<li>
@@ -51,10 +51,6 @@ Monitored by the technologies divison of Western Founders Network.
 						<div class="date">October 18, 2015</div>
 					</li>
 -->
-					<li>
-						<span>Director Applications Have Closed</span>
-						<div class="date">October 6, 2015</div>
-					</li>
 <!--
 					<li>
 						<a href="https://www.facebook.com/events/906628299424892/">Come out to our Annual General Meeting</a>
