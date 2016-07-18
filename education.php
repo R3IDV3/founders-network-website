@@ -14,7 +14,7 @@
 				<section class="site-section-heading -education">
 					<div class="ac">
 						<h1 class="small-caps site-section-title">Education <span class="char">&amp;</span> Projects</h1>
-						<p class="serif"><em>Bonding over technology breeds innovation and creates partnerships that can last forever. Founders Network is commited to create a collaborative environment where student can build, break, and most importantly, learn together.</em></p>
+						<p class="serif"><em>Bonding over technology breeds innovation and creates partnerships that can last forever. Founders Network is committed to creating a collaborative environment where student can build, break, and most importantly, learn together.</em></p>
 					</div>
 				</section>
 				<?php include 'inc/nav.php' ?>
