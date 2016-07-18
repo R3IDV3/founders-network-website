@@ -1353,6 +1353,7 @@ nav {
 				line-height: 85px;
 				margin: 0;
 				margin: 0 20px 0 0px;
+				position: relative;
 				font-size: 0.8125em;
 				border-bottom: 3px solid rgba(250, 247, 235, 0);
 				transition: all 0.3s;
@@ -1367,12 +1368,84 @@ nav {
 
 				&:hover {
 					border-bottom: 3px solid rgba(250, 247, 235, 0.5);
+					
+					ul {
+    					opacity: 1;
+    					visibility: visible;
+					}
 				}
 
 				a {
 					color: $beige;
 					position: relative;
 					display: inline-block;
+					
+					&.with-submenu {
+        				
+        				&::after {
+            				content: "\a0\a0\f107";
+            				font-family: "FontAwesome";
+        				}
+        				
+        				&[href=""] {
+            				cursor: default;
+        				}
+    				}
+				}
+				
+				ul {
+    				background: rgba(black, 0.1);
+    				opacity: 0;
+    				left: 0;
+    				margin: 0;
+    				position: absolute;
+    				top: calc(100% + 3px + 20px); // 100% + parent menu border + tab
+    				transition: all 0.3s;
+    				visibility: hidden;
+    				min-width: 200px;
+    				z-index: 9999;
+    				-webkit-backdrop-filter: blur(10px);
+    				
+    				&::before {
+        				content: "";
+        				background:                                     rgba(black, 0.1);
+        				background: -webkit-linear-gradient(left top,   rgba(black, 0.1) 50%, transparent 50%); /* For Safari 5.1 to 6.0 */
+                        background: -o-linear-gradient(bottom right,    rgba(black, 0.1) 50%, transparent 50%); /* For Opera 11.1 to 12.0 */
+                        background: -moz-linear-gradient(bottom right,  rgba(black, 0.1) 50%, transparent 50%); /* For Firefox 3.6 to 15 */
+        				background: linear-gradient(to bottom right,    rgba(black, 0.1) 50%, transparent 50%);
+        				height: 20px;
+        				left: 0;
+        				position: absolute;
+        				top: 0;
+        				transform: rotate(45deg) translate3d(0, -100%, 0);
+        				transform-origin: left top;
+        				width: 20px;
+    				}
+    				
+    				li {
+        				border: none;
+        				display: block;
+        				font-size: 1em;
+        				height: 70px;
+        				line-height: 70px;
+        				margin: 0;
+        				width: 100%;
+        				
+        				&:first-child {
+        					margin-left: 0;
+        				}
+        				
+        				&:hover {
+            				background: rgba(black, 0.15);
+            				border: none;
+        				}
+        				
+        				a {
+            				//text-shadow: 0px 0px 3px rgba(black, 0.2);
+            				display: block;
+            				padding: 0 20px;
+        				}
+    				}
 				}
 			}
 		}
@@ -1494,10 +1567,11 @@ nav {
 				display: block;
 				width: 100%;
 				height: 7.5vh;
-				border-bottom: 1px solid rgba($beige,0.5);
+				height: 100%;
+				border-bottom: 1px solid rgba($beige, 0.5);
 
 				&:first-child {
-					border-top: 1px solid rgba($beige,0.5);
+					border-top: 1px solid rgba($beige, 0.5);
 				}
 
 				a {
@@ -1506,6 +1580,34 @@ nav {
 					width: 100%;
 					height: 100%;
 					color: $beige;
+					
+					&.with-submenu {
+        				
+        				&::after {
+            				content: "\a0\a0\f107";
+            				font-family: "FontAwesome";
+        				}
+        				
+        				&.open {
+            				
+            				&::after {
+                				content: "\a0\a0\f106";
+            				}
+        				}
+        				
+        				&[href=""] {
+            				cursor: default;
+        				}
+    				}
+				}
+				
+				ul {
+    				position: relative;
+    				display: none;
+    				
+    				li {
+        				background: rgba($beige, 0.2);
+    				}
 				}
 			}
 		}
