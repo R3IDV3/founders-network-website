@@ -3,6 +3,7 @@
 	<head>
 		<title>Western Founders Network - About Us</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script" data-mailmunch-site-id="244825" async="async"></script>
 	</head>
 	<body id="about">
 		<?php include 'inc/assets.php' ?>
