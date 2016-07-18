@@ -30,7 +30,7 @@
 					
 					<header class="blurb">
 						<h1 class="small-caps">Executives</h1>
-						<p>Executives haven't been selected yet for the upcoming 2015-2016 year. <!-- <a href="/director-applications">Apply now &rarr;</a> -->
+						<p>Executives haven't been selected yet for the upcoming 2016-2017 year. <a href="/director-applications">Apply now &rarr;</a>
 						</p>
 					</header>
 <!--
@@ -94,6 +94,7 @@
 				</article>
 			</article>
 			
+<!--
 			<article>
 				<section class="team">
 					<div style="text-align: left;">
@@ -123,9 +124,10 @@
 							<h1 class="small-caps">Samantha Armstrong</h1>
 							<p><em>Vice President</em></p>
 						</div>
-					</div><!-- text-align: left; -->
+					</div>
 				</section>
 			</article>
+-->
 			<?php include 'inc/footer.php' ?>
 		</div><!-- .ip-main -->
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
