@@ -1614,6 +1614,40 @@ nav {
 	}
 }
 
+body:not(#home) {
+    
+    nav {
+        
+        .nav {
+            
+            ul {
+                
+                li {
+                    
+                    ul {
+                        background: $beige;
+                        
+                        &::before {
+                            background:                                     $beige;
+            				background: -webkit-linear-gradient(left top,   $beige 50%, transparent 50%); /* For Safari 5.1 to 6.0 */
+                            background: -o-linear-gradient(bottom right,    $beige 50%, transparent 50%); /* For Opera 11.1 to 12.0 */
+                            background: -moz-linear-gradient(bottom right,  $beige 50%, transparent 50%); /* For Firefox 3.6 to 15 */
+            				background: linear-gradient(to bottom right,    $beige 50%, transparent 50%);
+                        }
+                        
+                        li {
+                            
+                            a {
+                                color: $charcoal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .industry {
 	background: transparent url('../img/testimonial-industry.jpg') center/cover no-repeat;
 	height: (997/3644 * 100) + vw; // aspect ratio of testimonial/ sponsors images
