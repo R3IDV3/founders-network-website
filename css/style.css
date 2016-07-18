@@ -1526,6 +1526,25 @@ nav svg path {
   }
 }
 
+body:not(#home) nav .nav ul li ul {
+  background: #FBF8EC;
+}
+
+body:not(#home) nav .nav ul li ul::before {
+  background: #FBF8EC;
+  background: -webkit-linear-gradient(left top, #FBF8EC 50%, transparent 50%);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #FBF8EC 50%, transparent 50%);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #FBF8EC 50%, transparent 50%);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #FBF8EC 50%, transparent 50%);
+}
+
+body:not(#home) nav .nav ul li ul li a {
+  color: #2A2A2A;
+}
+
 .industry {
   background: transparent url("../img/testimonial-industry.jpg") center/cover no-repeat;
   height: 27.36004vw;
