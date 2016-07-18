@@ -28,7 +28,7 @@
 			</header>
 			<article>
 				<header class="blurb">
-					<h1 class="small-caps">What is Founders Network?</h1>
+					<h1 class="small-caps">What is Founders Network<span class="char">?</span></h1>
 					<p>Founders Network is a vibrant biz-tech network that aims to cultivate a community of entrepreneurially minded individuals and promote programming literacy. Founders Network focuses on helping students propel their tech skills and creative goals through three channels: education, entrepreneurship, and industry.</p>
 				</header>
 				<section class="stats">
