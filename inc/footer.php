@@ -1,7 +1,7 @@
 <footer class="site-footer">
 	<div class="site-footer-content">
 		<div class="col-left hidden-portrait">
-			<a href="/" class="no-angle"><img class="logo" src="/img/logo.svg" /></a>
+			<a href="/" class="no-angle"><img class="logo" src="img/logo.svg" /></a>
 			<h1 class="small-caps" style="margin-top: 20px;">Disclaimer</h1>
 			<p>All information collected is only available for purposes of the Founders Network organization. We will not voluntarily disclose your information to any third parties. In using the site you agree that Founders Network is not liable for any loss or damage resulting from unintended circumstances that may arise from the use of this website that are out of our control. Although we are run by Western University students, we are an independent organization that is not affiliated with the university.<br>
 				<br>
