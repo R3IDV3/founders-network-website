@@ -149,7 +149,9 @@
                             array(
                                 "Pitch a creative marketing strategy to attract students at Western University to join the Founders Network.",
                                 "What experience do you have with multimedia platforms? (Adobe Creative Suite, photography, videography, editing softwares, etc.)"
-                            )
+                            ),
+                            
+                            "The Marketing and Community portfolio aims to establish a widespread presence at Western University, primarily reaching out to a breadth of groups in a creative and effective manner. Members of the Marketing sector have a passion for creativity and experience in a breadth of talents - from creative design and photography, to web development and online ad campaigning. In the Community sector, executive members will have a chance to  create meaningful connections with existing Founders Network members while simultaneously reaching out to potential newcomers through club events and social media outlets. All executives will work closely with the various portfolios to help deliver successful events to the university community."
                         );
 
     					new Portfolio("Finance & Business Development", "finance@foundersnetwork.ca", array(
