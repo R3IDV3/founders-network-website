@@ -15,7 +15,7 @@
 	<h1 class="small-caps">Nick Elder</h1>
 	<p><em>Head of Operations & Entrepreneurship</em></p>
 	<a class="diamond-icon sm" href="mailto:nick@foundersnetwork.ca" title="nick@foundersnetwork.ca"><i class="fa fa-envelope-o"></i></a>
-	<a class="diamond-icon sm" href="www.linkedin.com/in/nicholas-elder" title="View Nick Elder on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+	<a class="diamond-icon sm" href="http://www.linkedin.com/in/nicholas-elder" title="View Nick Elder on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
 </div><div class="team-member">
 	<img src="img/davidnisenbaum.jpg" >
 	<h1 class="small-caps">David Nisenbaum</h1>
@@ -33,7 +33,7 @@
 	<h1 class="small-caps">Frank Dong</h1>
 	<p><em>Co-head of Industry</em></p>
 	<a class="diamond-icon sm" href="mailto:frank@foundersnetwork.ca" title="frank@foundersnetwork.ca"><i class="fa fa-envelope-o"></i></a>
-	<a class="diamond-icon sm" href="www.linkedin.com/in/dongfrank" title="View Frank Dong on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
+	<a class="diamond-icon sm" href="http://www.linkedin.com/in/dongfrank" title="View Frank Dong on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
 </div><div class="team-member">
 	<img src="img/nikovirvilis.jpg" >
 	<h1 class="small-caps">Niko Virvilis</h1>
@@ -44,7 +44,7 @@
 <div class="team-member">
 	<img src="img/joshuawilliams.jpg" >
 	<h1 class="small-caps">Joshua Williams</h1>
-	<p><em>Head of Finance & Sponsorship</em></p>
+	<p><em>Head of Finance & Business Development</em></p>
 	<a class="diamond-icon sm" href="mailto:finance@foundersnetwork.ca" title="finance@foundersnetwork.ca"><i class="fa fa-envelope-o"></i></a>
 	<a class="diamond-icon sm" href="https://ca.linkedin.com/in/williamsjoshua95" title="View Joshua Williams on LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
 </div><div class="team-member">
