@@ -2206,3 +2206,14 @@ body:not(#home) nav .nav ul li ul li a {
     opacity: 1;
   }
 }
+
+.fn-mailmunch-ebr {
+  width: 33%;
+  margin: 0 auto;
+}
+
+@media only screen and (orientation: portrait) {
+  .fn-mailmunch-ebr {
+    width: 90%;
+  }
+}

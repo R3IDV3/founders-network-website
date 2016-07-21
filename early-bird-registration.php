@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Western Founders Network - Early Bird Registration</title>
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script" data-mailmunch-site-id="244825" async="async"></script>
 	</head>
 	<body>
@@ -26,8 +26,8 @@
 				</header>
 			</article>
 			
-			<article style="width: 90%; margin: 0 auto;">
-			<div class='mailmunch-forms-widget-319667'></div>
+			<article class="fn-mailmunch-ebr">
+			    <div class='mailmunch-forms-widget-319667'></div>
 			</article>
 <!--
 			<article class="form" style="margin-top: 0;">
@@ -73,8 +73,8 @@
 		</div><!-- .ip-main -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="/dist/jquery.easing.1.3.js"></script>
-	<script src="/dist/fn.min.js"></script>
-	<script src="/dist/eeapplication.js"></script>
+	<script src="dist/jquery.easing.1.3.js"></script>
+	<script src="dist/fn.min.js"></script>
+	<script src="dist/eeapplication.js"></script>
 	</body>
 </html>

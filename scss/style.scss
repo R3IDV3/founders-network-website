@@ -2365,3 +2365,12 @@ body:not(#home) {
 		opacity: 1;
 	}
 }
+
+.fn-mailmunch-ebr {
+    width: 33%;
+    margin: 0 auto;
+    
+    @include portrait() {
+        width: 90%;
+    }
+}
