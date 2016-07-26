@@ -1,7 +1,7 @@
 <footer class="site-footer">
 	<div class="site-footer-content">
 		<div class="col-left hidden-portrait">
-			<a href="/" class="no-angle"><img class="logo" src="/img/logo.svg" /></a>
+			<a href="/" class="no-angle"><img class="logo" src="img/logo.svg" /></a>
 			<h1 class="small-caps" style="margin-top: 20px;">Disclaimer</h1>
 			<p>All information collected is only available for purposes of the Founders Network organization. We will not voluntarily disclose your information to any third parties. In using the site you agree that Founders Network is not liable for any loss or damage resulting from unintended circumstances that may arise from the use of this website that are out of our control. Although we are run by Western University students, we are an independent organization that is not affiliated with the university.<br>
 				<br>
@@ -38,12 +38,12 @@ Monitored by the technologies divison of Western Founders Network.
 				<h1 class="small-caps">Recent News</h1>
 				<ul class="news">
 					<li>
-						<a href="https://www.facebook.com/events/1492988367663912/">Join us at Startup Showcase!</a>
-						<div class="date">November 17, 2015</div>
+						<a href="/join">Early Bird Registration Available</a>
+						<div class="date">Jul 18, 2016</div>
 					</li>
 					<li>
-						<span>Education Executive Applications Have Closed</span>
-						<div class="date">October 30, 2015</div>
+						<a href="/director-applications">Director Applications Open</a>
+						<div class="date">Jul 18, 2016</div>
 					</li>
 <!--
 					<li>
@@ -51,10 +51,6 @@ Monitored by the technologies divison of Western Founders Network.
 						<div class="date">October 18, 2015</div>
 					</li>
 -->
-					<li>
-						<span>Director Applications Have Closed</span>
-						<div class="date">October 6, 2015</div>
-					</li>
 <!--
 					<li>
 						<a href="https://www.facebook.com/events/906628299424892/">Come out to our Annual General Meeting</a>

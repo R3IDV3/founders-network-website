@@ -3,6 +3,7 @@
 	<head>
 		<title>Western Founders Network - Education</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="//a.mailmunch.co/app/v1/site.js" id="mailmunch-script" data-mailmunch-site-id="244825" async="async"></script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 	</head>
 	<body id="education">
