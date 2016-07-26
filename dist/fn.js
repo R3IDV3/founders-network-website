@@ -30,6 +30,7 @@ $(window).load(function(){
 $(function(){
 	var counted = false;
 	
+/*
 	$(window).scroll(function(){
 		
 		$('.event').each(function(){
@@ -41,6 +42,7 @@ $(function(){
 
 	});
 	$(window).trigger('scroll');
+*/
 });
 
 function isInView(element) {
