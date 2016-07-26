@@ -1789,6 +1789,18 @@ body:not(#home) nav .nav ul li ul li a {
   background-image: url("../img/event-ap.jpg");
 }
 
+.events .event.-me {
+  background-image: url("../img/event-me.jpg");
+}
+
+.events .event.-proj {
+  background-image: url("../img/event-proj.jpg");
+}
+
+.events .event.-ps {
+  background-image: url("../img/event-ps.jpg");
+}
+
 .events .event .event-inner {
   background: linear-gradient(rgba(255, 255, 255, 0.2), transparent 5px);
   background-origin: padding-box;

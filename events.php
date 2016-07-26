@@ -137,6 +137,33 @@
         				</div>
     				</div>
     			</div>
+					<div class="event-wrapper">
+    				<div class="event -me">
+        				<div class="event-inner">
+            				<h1 class="event-title small-caps">Monthly Educationals</h1>
+            				<p class="event-desc">Monthly educationals are held to enlighten students about new and upcoming technologies, as well as introduce students to the main technologies used in the big tech companies.</p>
+            				<p class="event-pillar serif"><em><a href="/education">Education</a></em></p>
+        				</div>
+    				</div>
+    			</div>
+					<div class="event-wrapper">
+    				<div class="event -proj">
+        				<div class="event-inner">
+            				<h1 class="event-title small-caps">Projects</h1>
+            				<p class="event-desc">The Founders Network will allow members to participate in project development. Led by experienced developers, the aim of these projects is get members familiar with the technologies that will help them create an MVP for their startup or land a software engineering job</p>
+            				<p class="event-pillar serif"><em><a href="/education">Education</a></em></p>
+        				</div>
+    				</div>
+    			</div>
+					<div class="event-wrapper">
+    				<div class="event -ps">
+        				<div class="event-inner">
+            				<h1 class="event-title small-caps">Project Showcase</h1>
+            				<p class="event-desc">Members will have a chance to present the projects they worked on throughout each term. This is the time to talk about challenges overcome, skills learned, and hear some feedback from fellow students.</p>
+            				<p class="event-pillar serif"><em><a href="/education">Education</a></em></p>
+        				</div>
+    				</div>
+    			</div>
 			</article><!-- .events -->
 			<?php include 'inc/footer.php' ?>
 		</div><!-- .ip-main -->
