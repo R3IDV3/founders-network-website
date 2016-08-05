@@ -77,6 +77,7 @@
 					<p class="small-caps attributor-title">Western News</p>
 				</div>
 			</article>
+<!--
 			<article>
 				<header class="blurb">
 					<h1 class="small-caps">Our Team</h1>
@@ -86,7 +87,14 @@
 					<?php include 'inc/core-team.php' ?>
 				</section>
 			</article>
+-->
 			<article>
+				<header class="blurb">
+					<div class="company no-border">
+    					<img src="img/tract9.png">
+    				</div>
+					<p>Founders Network has recently partnered with Toronto technology and design incubator Tract9, come check out their <a href="http://tract9.com/toronto-events/tract-9-youth-innovation-booster/" target="_blank">Youth Innovation Booster</a> this weekend. This a perfect opportunity to advance any budding entrepreneurship aspirations or projects as you will get access to top notch experts in venture capital and entrepreneurship!</p>
+				</header>
 				<header class="blurb">
 					<h1 class="small-caps">Affiliates <span class="char">&</span> Partners</h1>
 					<p>All of our affiliates and partners are satisfied with our organization. Hopefully your company is next.</p>

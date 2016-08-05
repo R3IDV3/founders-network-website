@@ -269,6 +269,21 @@ a {
 		height: 1px;
 		border-top: 1px solid $beige;
 	}
+	
+	.company {
+		display: inline-block;
+		margin: 25px;
+		border: 1px solid white;
+		width: 302px;
+
+		img {
+			width: 100%;
+		}
+		
+		&.no-border {
+    		border: none;
+		}
+	}
 
 	@include portrait() {
 

@@ -111,7 +111,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #5C5EDC;
+  color: #6DC2F5;
   outline: none;
   transition: color 0.3s;
 }
@@ -269,6 +269,21 @@ a:hover {
   width: 150px;
   height: 1px;
   border-top: 1px solid #FBF8EC;
+}
+
+.blurb .company {
+  display: inline-block;
+  margin: 25px;
+  border: 1px solid white;
+  width: 302px;
+}
+
+.blurb .company img {
+  width: 100%;
+}
+
+.blurb .company.no-border {
+  border: none;
 }
 
 @media only screen and (orientation: portrait) {
@@ -662,7 +677,7 @@ a:hover {
     border-left: none;
   }
   .schedule .item .description a {
-    color: #5C5EDC;
+    color: #6DC2F5;
   }
   .schedule .item .description img {
     width: 70% !important;
