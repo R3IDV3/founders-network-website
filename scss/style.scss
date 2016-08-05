@@ -302,6 +302,10 @@ a {
 	}
 }
 
+.stats + .blurb {
+    padding-top: 50px;
+}
+
 .sub-blurb {
 	padding: 0 0 25px 0;
 	position: relative;
@@ -1246,8 +1250,8 @@ header {
 			background: transparent url('../img/site-section-header-events.jpg') center/cover no-repeat;
 		}
 
-		&.-about {
-			background: transparent url('../img/site-section-header-about.jpg') center/cover no-repeat;
+		&.-community {
+			background: transparent url('../img/site-section-header-community.jpg') center/cover no-repeat;
 		}
 
 		&.-team {
@@ -1983,6 +1987,36 @@ body:not(#home) {
 	@include portrait() {
 
 	}
+}
+
+.feature-btn {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    
+    a {
+        font-size: 1em;
+        width: 50%;
+    }
+    
+    .btn {
+        box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.15);
+        padding: 2.5em;
+        color: $charcoal;
+		background: $beige;
+		
+		&:hover {
+    		color: $beige;
+    		background: rgba(0, 0, 0, 0.15);
+		}
+    }
+    
+    @include portrait() {
+        
+        a {
+            width: 100%;
+        }
+    }
 }
 
 .form {

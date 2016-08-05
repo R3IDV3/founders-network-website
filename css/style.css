@@ -299,6 +299,10 @@ a:hover {
   }
 }
 
+.stats + .blurb {
+  padding-top: 50px;
+}
+
 .sub-blurb {
   padding: 0 0 25px 0;
   position: relative;
@@ -1176,8 +1180,8 @@ header .site-section-heading.-events {
   background: transparent url("../img/site-section-header-events.jpg") center/cover no-repeat;
 }
 
-header .site-section-heading.-about {
-  background: transparent url("../img/site-section-header-about.jpg") center/cover no-repeat;
+header .site-section-heading.-community {
+  background: transparent url("../img/site-section-header-community.jpg") center/cover no-repeat;
 }
 
 header .site-section-heading.-team {
@@ -1860,6 +1864,35 @@ body:not(#home) nav .nav ul li ul li a {
 
 .events .event .event-inner .event-pillar a:hover {
   color: white;
+}
+
+.feature-btn {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+.feature-btn a {
+  font-size: 1em;
+  width: 50%;
+}
+
+.feature-btn .btn {
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.15);
+  padding: 2.5em;
+  color: #2A2A2A;
+  background: #FBF8EC;
+}
+
+.feature-btn .btn:hover {
+  color: #FBF8EC;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (orientation: portrait) {
+  .feature-btn a {
+    width: 100%;
+  }
 }
 
 .form {

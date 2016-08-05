@@ -6,7 +6,7 @@
 	<div class="nav-bottom" style="position: relative; display: none;">
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="/about">About Us</a></li>
+			<li><a href="/community">Community</a></li>
 			<li><a href="/events">Events</a></li>
 			<li>
 			    <a class="with-submenu">Get Involved</a>

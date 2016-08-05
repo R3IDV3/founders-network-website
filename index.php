@@ -4,7 +4,7 @@
 
 	new Router(array(
 		'/' => 'home.php',
-		'/about' => 'about.php',
+		'/community' => 'community.php',
 		'/team' => 'team.php',
 		'/programs' => 'programs.php',
 		'/events' => 'events.php',
