@@ -8,9 +8,9 @@ $(function(){
 			'<a class="feature-link" href="/director-applications">Get Involved<br>Become a Director</a>'
 		],
 		images = [
-			'img/entrepeneurship.png',
-			'img/devices.png',
-			'img/entrepeneurship.png'
+			'img/ticker-img-1.png',
+			'img/ticker-img-2.png',
+			'img/ticker-img-3.png'
 		];
 	
 	for ( item = 0; item < taglines.length; item++ ) {
