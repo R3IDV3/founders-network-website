@@ -45,7 +45,7 @@ html {
 /* Main styles */
 body {
   font-family: "Avenir", "Helvetica Neue", Helvetica, "Lato", "Segoe UI", Arial, sans-serif;
-  color: #CECECE;
+  color: white;
   background: #2A2A2A;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -64,7 +64,7 @@ body.layout-switch .ip-header {
 }
 
 h1 {
-  color: #FBF8EC;
+  color: inherit;
   font-size: 2.5em;
   font-weight: normal;
   margin: 0;
@@ -106,7 +106,7 @@ h2 {
 p {
   font-size: 1.25em;
   line-height: 1.5;
-  color: white;
+  color: inherit;
 }
 
 a {
@@ -128,6 +128,13 @@ a:hover {
   a {
     color: #ddd;
   }
+}
+
+article.inverted {
+  background-color: #FBF8EC;
+  border-top-color: #2A2A2A;
+  color: #2A2A2A;
+  padding-bottom: 50px;
 }
 
 .col-half {
@@ -269,6 +276,7 @@ a:hover {
   width: 150px;
   height: 1px;
   border-top: 1px solid #FBF8EC;
+  border-top-color: inherit;
 }
 
 .blurb .company {
@@ -283,6 +291,34 @@ a:hover {
 }
 
 .blurb .company.no-border {
+  border: none;
+}
+
+.blurb.wide h1 {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.blurb.wide h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  display: block;
+  width: 150px;
+  height: 1px;
+  border-top: 1px solid #FBF8EC;
+  border-top-color: inherit;
+}
+
+.blurb.wide p {
+  width: 75%;
+}
+
+.blurb.wide::after {
   border: none;
 }
 
@@ -303,6 +339,14 @@ a:hover {
   padding-top: 50px;
 }
 
+.blurb + .blurb {
+  padding-top: 50px;
+}
+
+.blurb:last-child {
+  margin-bottom: 100px;
+}
+
 .sub-blurb {
   padding: 0 0 25px 0;
   position: relative;
@@ -319,7 +363,6 @@ a:hover {
   display: inline-block;
   height: 40px;
   width: 40px;
-  margin-right: 1em;
   border: 1px solid #FBF8EC;
   background-color: transparent;
   -webkit-transform: rotate(45deg);

@@ -47,7 +47,7 @@ html {
 /* Main styles */
 body {
 	font-family: $sans-serif;
-	color: #CECECE;
+	color: white;
 	background: $charcoal;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -69,7 +69,7 @@ body {
 }
 
 h1 {
-	color: $beige;
+	color: inherit;
 	font-size: 2.5em;
 	font-weight: normal;
 	margin: 0;
@@ -112,7 +112,7 @@ h2 {
 p {
 	font-size: 1.25em;
 	line-height: 1.5;
-	color: white
+	color: inherit;
 }
 
 a {
@@ -132,6 +132,13 @@ a {
 	@include portrait() {
 		color: #ddd;
 	}
+}
+
+article.inverted {
+    background-color: $beige;
+    border-top-color: $charcoal;
+    color: $charcoal;
+    padding-bottom: 50px;
 }
 
 .col-half {
@@ -268,6 +275,7 @@ a {
 		width: 150px;
 		height: 1px;
 		border-top: 1px solid $beige;
+		border-top-color: inherit;
 	}
 	
 	.company {
@@ -283,6 +291,37 @@ a {
 		&.no-border {
     		border: none;
 		}
+	}
+	
+	&.wide {
+    	
+    	h1 {
+        	padding-bottom: 10px;
+        	position: relative;
+        	
+        	&::after {
+        		content: '';
+        		position: absolute;
+        		bottom: 0px;
+        		left: 50%;
+        		-webkit-transform: translate3d(-50%,0,0);
+        			-ms-transform: translate3d(-50%,0,0);
+        				transform: translate3d(-50%,0,0);
+        		display: block;
+        		width: 150px;
+        		height: 1px;
+        		border-top: 1px solid $beige;
+        		border-top-color: inherit;
+        	}
+    	}
+    	
+    	p {
+        	width: 75%;
+    	}
+    	
+    	&::after {
+    		border: none;
+    	}
 	}
 
 	@include portrait() {
@@ -306,6 +345,14 @@ a {
     padding-top: 50px;
 }
 
+.blurb + .blurb {
+    padding-top: 50px;
+}
+
+.blurb:last-child {
+    margin-bottom: 100px;
+}
+
 .sub-blurb {
 	padding: 0 0 25px 0;
 	position: relative;
@@ -322,7 +369,6 @@ a {
 	display: inline-block;
 	height: 40px;
 	width: 40px;
-	margin-right: 1em;
 	border: 1px solid $beige;
 	background-color: transparent;
 	-webkit-transform: rotate(45deg);
