@@ -31,9 +31,11 @@
 					
 					<header class="blurb">
 						<h1 class="small-caps">Executives</h1>
-						<p>Executives haven't been selected yet for the upcoming 2016-2017 year. <a href="/director-applications">Apply now &rarr;</a>
-						</p>
+						<p>Executives haven't been selected yet for the upcoming 2016-2017 year.</p>
 					</header>
+					<section class="feature-btn">
+    					<a href="/director-applications" class="btn small-caps">Apply to be an Executive</a>
+					</section>
 <!--
 					<div class="team-member">
 						<h1 class="small-caps">Taha Nasir</h1>

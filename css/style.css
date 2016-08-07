@@ -390,6 +390,7 @@ article.inverted .feature-btn .btn:hover {
 
 .diamond-icon.sm {
   height: 25px;
+  margin-right: 10px;
   width: 25px;
 }
 
@@ -1934,7 +1935,7 @@ body:not(#home) nav .nav ul li ul li a {
 
 .feature-btn a {
   font-size: 1em;
-  width: 50%;
+  width: 100%;
 }
 
 .feature-btn .btn {
