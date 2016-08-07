@@ -134,7 +134,24 @@ article.inverted {
   background-color: #FBF8EC;
   border-top-color: #2A2A2A;
   color: #2A2A2A;
-  padding-bottom: 50px;
+  padding: 100px 0;
+}
+
+article.inverted .blurb:first-child {
+  padding-top: 0;
+}
+
+article.inverted .feature-btn .btn {
+  border: 1px solid #2A2A2A;
+  box-shadow: none;
+  color: #2A2A2A;
+  background: transparent;
+}
+
+article.inverted .feature-btn .btn:hover {
+  border: 1px solid #2A2A2A;
+  color: #FBF8EC;
+  background: #2A2A2A;
 }
 
 .col-half {
@@ -1932,8 +1949,17 @@ body:not(#home) nav .nav ul li ul li a {
   background: rgba(0, 0, 0, 0.15);
 }
 
+.feature-btn.thirds .btn {
+  width: calc(33.3% - 20px);
+  margin: 0 10px;
+}
+
 @media only screen and (orientation: portrait) {
   .feature-btn a {
+    width: 100%;
+  }
+  .feature-btn.thirds .btn {
+    margin: 25px 0;
     width: 100%;
   }
 }

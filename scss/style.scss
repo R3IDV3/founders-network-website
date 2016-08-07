@@ -138,7 +138,27 @@ article.inverted {
     background-color: $beige;
     border-top-color: $charcoal;
     color: $charcoal;
-    padding-bottom: 50px;
+    padding: 100px 0;
+    
+    .blurb:first-child {
+        padding-top: 0;
+    }
+    
+    .feature-btn {
+        
+        .btn {
+            border: 1px solid $charcoal;
+            box-shadow: none;
+    		color: $charcoal;
+    		background: transparent;
+    		
+    		&:hover {
+        		border: 1px solid $charcoal;
+        		color: $beige;
+        		background: $charcoal;
+    		}
+        }
+    }
 }
 
 .col-half {
@@ -2057,10 +2077,26 @@ body:not(#home) {
 		}
     }
     
+    &.thirds {
+        
+        .btn {
+            width: calc(33.3% - 20px);
+            margin: 0 10px;
+        }
+    }
+    
     @include portrait() {
         
         a {
             width: 100%;
+        }
+        
+        &.thirds {
+            
+            .btn {
+                margin: 25px 0;
+                width: 100%;
+            }
         }
     }
 }
