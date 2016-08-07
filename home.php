@@ -84,7 +84,7 @@
 					<p>Founders Network is led by a diverse team of students majoring in a multitude of disciplines at Western University. We share a common passion for technology and we believe that programming skills are essential and applicable regardless one’s major.</p>
 				</header>
 				<section class="team">
-					<?php include 'inc/core-team.php' ?>
+					
 				</section>
 			</article>
 -->
@@ -121,7 +121,7 @@
 			</article>
 			<article class="inverted">
     			<header class="blurb wide">
-					<p class="small-caps" style="font-size: large;">Founders Network is for students, by students. We recognize that our Founders will come from a set of diverse backgrounds with varied skills which is why we have constructed three specially designed pillars to encompass the entire spectrum of talent that we attract.</p>
+					<p><span class="small-caps"><strong>Founders Network is for students, by students.</strong></span> We recognize that our Founders will come from a set of diverse backgrounds with varied skills which is why we have constructed three specially designed pillars to encompass the entire spectrum of talent that we attract.</p>
 				</header>
 				<header class="blurb wide">
     				<h1 class="small-caps">Education</h1>
