@@ -11,11 +11,11 @@
 	</div>
 	<div class="nav right">
 		<ul>
-			<li>
-			    <a class="with-submenu" href="">Get Involved</a>
+    		<li>
+			    <a class="with-submenu" href="">About Us</a>
 			    <ul>
-    			    <li><a href="/join">Early Bird Registration</a></li>
-    			    <li><a href="/director-applications">Become an Executive</a></li>
+    			    <li><a href="/group-strategy">Group Strategy</a></li>
+    			    <li><a href="/team">Executive Team</a></li>
 			    </ul>
             </li>
 			<li>
@@ -26,7 +26,13 @@
     			    <li><a href="/industry">Industry</a></li>
 			    </ul>
             </li>
-			<li><a href="/faq">FAQ</a></li>
+            <li>
+			    <a class="with-submenu" href="">Get Involved</a>
+			    <ul>
+    			    <li><a href="/join">Early Bird Registration</a></li>
+    			    <li><a href="/director-applications">Become an Executive</a></li>
+			    </ul>
+            </li>
 		</ul>
 <!--
 		<form method="post" action="results.php">
